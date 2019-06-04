@@ -97,19 +97,23 @@ class Homepage extends React.Component {
                             <h2>Interesting in talking more about your project?</h2>
                         </header>
                         <p>Contact us to recieve a free quote and timeline for your project</p>
-                        <ul className="actions uniform">
-                            <li><a href="#" className="button special">Sign Up</a></li>
-                            <li><a href="#" className="button">Learn More</a></li>
-                        </ul>
-                        <form 
+
+                        <form
                             name="contact" 
                             type="text"
                             data-netlify="true"
                             data-netlify-honeypot="bot-field">
-                            <input 
+                                <ul className="actions uniform">
+                            <li><input 
                                 type="text"
                                 name="name"
-                                placeholder="your name"/>
+                                placeholder="your name"/></li>
+                            <li><input 
+                                type="email"
+                                name="email"
+                                placeholder="your email"/></li>
+                        </ul>                 
+                                
                             <button>Send</button>
                         </form>
                     </div>
