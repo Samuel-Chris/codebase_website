@@ -91,18 +91,14 @@ class Homepage extends React.Component {
                     </div>
                 </section>
 
-                <section id="four" className="main style2 special">
+                <section id="four" className="main style2 special" >
                     <div className="container">
                         <header className="major">
                             <h2>Interesting in talking more about your project?</h2>
                         </header>
                         <p>Contact us to recieve a free quote and timeline for your project</p>
 
-                        <form
-                            name="contact" 
-                            type="text"
-                            data-netlify="true"
-                            data-netlify-honeypot="bot-field">
+                        <form name="contact" method="POST" data-netlify="true">
                                 <ul className="actions uniform">
                             <li><input 
                                 type="text"
@@ -114,7 +110,7 @@ class Homepage extends React.Component {
                                 placeholder="your email"/></li>
                         </ul>                 
                                 
-                            <button>Send</button>
+                            <button type="submit">Send</button>
                         </form>
                     </div>
                 </section>
