@@ -240,7 +240,16 @@
 /* Form */
 
 	form {
-		margin: 10% 0 _size(element-margin) 0;
+		
+		margin: 0 0 _size(element-margin) 0;
+	}
+
+	.largeform{
+		
+		max-width: 800px;
+		margin: auto;
+		align-items: center;
+		align-content: center;
 	}
 
 	label {
@@ -257,11 +266,11 @@
 	select,
 	textarea {
 		@include vendor('appearance', 'none');
-		background: _palette(border-bg);
+		// background: _palette(border-bg);
 		border-radius: _size(border-radius);
 		border: none;
 		border: solid 1px _palette(border);
-		color: inherit;
+		color: gray;
 		display: block;
 		outline: 0;
 		padding: 0 1em;
@@ -539,7 +548,7 @@
 
 	ul {
 		list-style: disc;
-		margin: 0 0 _size(element-margin) 0;
+		margin: 50px 0 _size(element-margin) 0;
 		padding-left: 1em;
 
 		li {
@@ -1298,7 +1307,7 @@
 
 			ul {
 				&.actions {
-					margin: 0 0 _size(element-margin) 0;
+					margin: 20px 0 _size(element-margin) 0;
 
 					li {
 						display: block;

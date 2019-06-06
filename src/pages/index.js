@@ -17,7 +17,7 @@ import embedIcon from '../assets/images/flutter_embedded.png'
 
 class Homepage extends React.Component {
     render() {
-        const siteTitle = "Codebase - Flutter Cross-development";
+        const siteTitle = "Codebase - Flutter Cross-Development Studio";
 
         return (
             <Layout>
@@ -98,7 +98,7 @@ class Homepage extends React.Component {
                         </header>
                         <p>Contact us to recieve a free quote and timeline for your project</p>
 
-                        <div >
+                        <div className="largeform">
                         <form 
                             name="contact"
                             method="post"
@@ -109,16 +109,16 @@ class Homepage extends React.Component {
                             <input type="hidden" name="bot-field" />
                             <input type="hidden" name="form-name" value="contact" />
                         <div className="field half first">
-                            <label htmlFor="name">Name</label>
-                            <input type="text" name="name" id="name" />
+                        <label htmlFor="message"></label>
+                            <input type="text" name="name" id="name" placeholder="Name"/>
                         </div>
                         <div className="field half">
-                            <label htmlFor="email">Email</label>
-                            <input type="text" name="email" id="email" />
+                        <label htmlFor="message"></label>
+                            <input type="text" name="email" id="email" placeholder="Email"/>
                         </div>
-                        <div className="actions">
-                            <label htmlFor="message">Message</label>
-                            <textarea name="message" id="message" rows="6" />
+                        <div className="field small">
+                            <label htmlFor="message"></label>
+                            <textarea name="message" id="message" rows="6" placeholder="Comments"/>
                         </div>
                         <ul className="actions">
                             <li>
