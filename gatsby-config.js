@@ -1,4 +1,5 @@
-module.exports = {
+
+const cfg = {
   siteMetadata: {
     title: "Codebase - Flutter Cross-Development Studio",
     author: "Greg Tucker",
@@ -45,4 +46,18 @@ module.exports = {
     'gatsby-plugin-sass',
     'gatsby-plugin-offline'
   ],
+  /* the rest of your config */
+};
+
+if (process.env.CONTEXT === "production") {
+  const googleAnalyticsCfg = {
+    resolve: "gatsby-plugin-google-analytics",
+    options: {
+      trackingId: "UA-141693263-1" // <- your tracking ID
+    }
+  };
+  cfg.plugins.push(googleAnalyticsCfg);
 }
+
+
+module.exports = cfg;
