@@ -71,20 +71,20 @@ class Homepage extends React.Component {
 
                         <div className="col-4">
                             <span className="image icon"><img src={pic02} alt="" /></span>
-                            <h3>Plan & Design</h3>
-                            <p>Let our in-house designer help you through the process of taking your idea and </p>
+                            <h3>Wireframe & Prototype</h3>
+                            <p>Our in-house Designer will help you take your idea and design a graphical wireframe and prototype that will allow user experience testing without investing a lot of time and resources.</p>
 
                         </div>
                         <div className="col-4">
                             <span className="image icon"><img src={pic03} alt="" /></span>
-                            <h3>Prototype & Code</h3>
-                            <p>Adipiscing a commodo ante nunc magna lorem et interdum mi ante nunc lobortis non amet vis sed volutpat et nascetur.</p>
+                            <h3>Coding sprints</h3>
+                            <p>Your graphical prototype will be used to as a blueprint, allowing our team to build fully-functional product, looking and feeling exactly right.</p>
      
                         </div>
                         <div className="col-4">
                             <span className="image icon"><img src={pic04} alt="" /></span>
                             <h3>Test & Launch</h3>
-                            <p>Adipiscing a commodo ante nunc magna lorem et interdum mi ante nunc lobortis non amet vis sed volutpat et nascetur.</p>
+                            <p>We will meticulously test your project's code as well as its functionality on various devices to ensure your product provides a great user experience.</p>
 
                         </div>
 

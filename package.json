@@ -1,8 +1,8 @@
 {
-  "name": "gatsby-starter-photon",
-  "description": "Gatsby photon starter",
+  "name": "codebase-studio",
+  "description": "Codebase Studio - Cross-platform Flutter developers",
   "version": "1.0.0",
-  "author": "Hunter Chang",
+  "author": "Codebase",
   "dependencies": {
     "gatsby": "^2.2.9",
     "gatsby-plugin-google-analytics": "^2.0.20",
@@ -16,7 +16,8 @@
     "react-helmet": "^5.2.0"
   },
   "keywords": [
-    "gatsby"
+    "Flutter",
+    "Flutter developer"
   ],
   "license": "MIT",
   "scripts": {
@@ -30,6 +31,6 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/gatsbyjs/gatsby-starter-photon"
+    "url": ""
   }
 }
