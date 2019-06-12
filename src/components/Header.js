@@ -9,7 +9,7 @@ class Header extends React.Component {
                 <div className="inner">
                     <img className="image logo" src={codebaseLogo} alt="Codebase logo"/>
                     <h1>Hi, we are a <strong>cross-platform</strong> <br />
-                    development team specializing in <a target="_blank" href="http://flutter.dev">Flutter</a>.</h1>
+                    development team specializing in <a target="_blank" rel="noopener" href="http://flutter.dev">Flutter</a>.</h1>
                     <p>We can deliver native apps using one codebase <br /> 
                     saving you time, money and energy.</p>
                     <ul className="actions">
