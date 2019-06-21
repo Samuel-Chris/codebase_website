@@ -27,9 +27,9 @@ class Homepage extends React.Component {
                     <div className="grid-wrapper">
                         <div className="col-6">
                             <header className="major">
-                                <h2>We can develop your project in record time</h2>
+                                <h2>We bring your great ideas to life.</h2>
                             </header>
-                            <p>Developing in Flutter, Google's cross-platform solution, allows us to creates native apps for iOS, Android, desktop, the web and even embedded devices all from a single codebase. All at a silky smooth 60FPS, which means your customers will have a great user experience.</p>
+                            <p>Our team is creative, skilled, and building with the latest cross-platform technology that can bring your project to life on all major platforms.</p>
                         </div>
                         <div className="col-6">
                             <span className="image fit"><img src={team} alt="" /></span>
@@ -53,7 +53,7 @@ class Homepage extends React.Component {
                             <header className="major">
                                 <h2>You can target all major platforms</h2>
                             </header>
-                            <p>Developing in Flutter, Google's cross-platform UI toolkit, creates native apps for iOS, Android, desktop, the web and even bedded devices all from a single codebase. All at a silky smooth 60fps, which means your customers will have a great user experience.</p>
+                            <p>Developing in Flutter, Google's cross-platform UI toolkit, creates native apps for iOS, Android and now able to reach the desktop, web and even bedded devices, all from a single codebase. All at a silky smooth 60fps, which means your customers will have a great user experience.</p>
                         </div>
                         
 
