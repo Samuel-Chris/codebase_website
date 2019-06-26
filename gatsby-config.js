@@ -1,8 +1,13 @@
 module.exports = {
   siteMetadata: {
+    siteUrl: `https://codebase.studio`,
     title: "Codebase - Flutter Cross-Development Studio",
-    author: "Greg Tucker",
-    description: "We are a cross-platform development studio that focuses on Flutter"
+    titleTemplate: "%s · Codebase Studio",
+    author: "Codebase",
+    image: "../assets/images/codebase_logo_black.png",
+    defaultImage: "../assets/images/codebase_logo_black.png",
+    url: "https://codebase.studio",
+    description: "We can build your app on all major platforms with one codebase in record time. Get a free quote."
   },
   plugins: [
     {
@@ -11,6 +16,7 @@ module.exports = {
         trackingId: "UA-141693263-1",
         head: true,
       },
+      
     },
     'gatsby-plugin-react-helmet',
     {
@@ -26,6 +32,7 @@ module.exports = {
       },
     },
     'gatsby-plugin-sass',
+    `gatsby-plugin-sitemap`,
     'gatsby-plugin-offline'
   ],
 }

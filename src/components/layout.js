@@ -1,5 +1,6 @@
 import React from "react";
 import "../assets/scss/main.scss";
+import SEO from "./Seo";
 
 import Header from "./Header";
 import Footer from "./Footer";
@@ -29,6 +30,7 @@ class Template extends React.Component {
 
         return (
             <div className={`body ${this.state.loading}`}>
+                <SEO/>
                 <Header />
                 {children}
                 <Footer />
