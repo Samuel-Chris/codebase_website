@@ -1,0 +1,29 @@
+.primary-button {
+    color: white;
+    font-size: 16px;
+    font-family: helvetica;
+    text-decoration: none;
+    border: 2px solid white;
+    border-radius: 40px;
+    transition-duration: .2s;
+    background-color: rgb(121, 27, 124);
+    margin: 3rem 0;
+    padding: 20px 50px;
+    text-align:center;
+    display: table;
+    width: auto;
+
+  }
+
+
+  
+  .button:hover {
+  /* update text color and background color */
+  color:white;
+  background-color:black;
+  
+   /* transitions */
+  transition-duration: .2s;
+  -webkit-transition-duration: .11s;
+  -moz-transition-duration: .2s;
+  }

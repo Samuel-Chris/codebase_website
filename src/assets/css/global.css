@@ -1,0 +1,27 @@
+.container{
+
+}
+
+
+h1{
+    font-size: 2.5em;
+    font-weight: 800;
+    line-height: 1em;
+    margin: 0  0 2rem 0;
+}
+
+p{
+    font-size: 1em;
+    line-height: 1.5em;
+}
+
+@media only screen and (max-width: 600px) {
+    .header-image{
+        display: none;
+    }
+
+    .header-content{
+
+        grid-template-columns: 1fr;
+    }
+  }

@@ -1,0 +1,39 @@
+.header-content{
+    height: 80vh;
+    padding: 0 10%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-content: center;
+    
+}
+
+.header-image{
+    background-color: brown;
+}
+
+.header-text{
+    max-width: 600px;
+    padding: 0 10% 0 0;
+
+}
+
+.header-text-content{
+
+}
+
+
+@media only screen and (max-width: 700px) {
+    .header-image{
+        display: none;
+    }
+
+    .header-content{
+
+        grid-template-columns: 1fr;
+    }
+
+    .header-text{
+        padding: 0;
+    
+    }
+  }
