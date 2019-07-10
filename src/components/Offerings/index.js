@@ -1,12 +1,14 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 
+import './offerings.css'
+
 const Offerings = ({ gridItems }) => (
-  <div className='container'>
+  <div className=''>
     {gridItems.map(item => (
-      <div key={item.image} className='offering-section' style={{borderRadius: '5px'}}>
-        <section className='section'>
-          <p className='has-text-centered'>
+      <div key={item.image} className='' style={{borderRadius: '5px'}}>
+        <section className=''>
+          <p className=''>
             <img alt='' src={item.image} />
           </p>
           <p>{item.text}</p>
