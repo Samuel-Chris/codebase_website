@@ -1,9 +1,9 @@
 .header-content{
     height: 80vh;
-    padding: 0 10%;
     display: grid;
     grid-template-columns: 1fr 1fr;
     align-content: center;
+    
     
 }
 
@@ -13,7 +13,7 @@
 
 .header-text{
     max-width: 600px;
-    padding: 0 10% 0 0;
+    margin: auto;
 
 }
 
@@ -33,7 +33,6 @@
     }
 
     .header-text{
-        padding: 0;
-    
+     padding: 0 10% 0 10%;
     }
   }

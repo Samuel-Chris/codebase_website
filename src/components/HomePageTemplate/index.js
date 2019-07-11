@@ -22,8 +22,7 @@ const HomePageTemplate = ({
       <title>{meta_title}</title>
       <meta name='description' content={meta_description} />
     </Helmet>
-    <section className='container'>
-      <div className='header-content'>
+    <section className='container header-content'>
       <div className='header-text'>
           <h1>
               {title}
@@ -33,7 +32,6 @@ const HomePageTemplate = ({
         </div>
         <div className='header-image'>
         </div>
-      </div>
     </section>
     <section className='section section--gradient'>
       <div className='container'>
