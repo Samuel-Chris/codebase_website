@@ -8,15 +8,12 @@
     transition-duration: .2s;
     background-color: rgb(121, 27, 124);
     margin: 3rem 0;
-    padding: 20px 50px;
+    padding: 10px 50px;
     text-align:center;
     display: table;
-    width: auto;
-
+    width: 200px;
   }
 
-
-  
   .button:hover {
   /* update text color and background color */
   color:white;

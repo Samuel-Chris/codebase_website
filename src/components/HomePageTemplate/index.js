@@ -22,7 +22,7 @@ const HomePageTemplate = ({
       <title>{meta_title}</title>
       <meta name='description' content={meta_description} />
     </Helmet>
-    <section className='container header-content'>
+    <section className='header-content'>
       <div className='header-text'>
           <h1>
               {title}
