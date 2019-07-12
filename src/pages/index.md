@@ -15,7 +15,7 @@ description: >-
 offerings:
   blurbs:
     - image: /img/coffee.png
-      heading: Lorem ipsum dolor sit amet
+      heading: Faster time to market
       text: >
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc finibus 
         sem a sem ultrices, eget sagittis magna tempor. Quisque pulvinar lorem 
