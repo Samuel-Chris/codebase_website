@@ -12,7 +12,7 @@ heading: Lorem ipsum dolor sit amet
 description: >-
   Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur,
   adipisci velit...
-offerings:
+offeringLeft:
   blurbs:
     - image: /img/coffee.png
       heading: Faster time to market
@@ -24,6 +24,31 @@ offerings:
         scelerisque eu sem. Etiam porttitor elit eget mi luctus, vitae blandit enim pretium. 
         Aenean nec hendrerit leo, a bibendum magna. In hac habitasse platea dictumst. 
         Suspendisse sapien magna, vestibulum non vehicula id, pellentesque in ante. Nullam 
+        sed auctor tellus. Sed ipsum sem, dapibus nec eros in, feugiat sagittis mi. 
+        Nullam et dui interdum, varius nibh eu, efficitur metus.
+        risus.
+offeringSpeed:
+  blurbs:
+    - image: /img/coffee.png
+      heading: Faster time to market
+      text: >
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc finibus 
+        sem a sem ultrices, eget sagittis magna tempor. Quisque pulvinar lorem 
+        molestie sapien ornare cursus. Praesent eget volutpat est. Proin at 
+        sagittis ex. Duis quis dui magna. Nullam urna purus, blandit vitae tincidunt ut, 
+        scelerisque eu sem. Etiam porttitor elit eget mi luctus, vitae blandit enim pretium. 
+        Aenean nec hendrerit leo, a bibendum magna. In hac habitasse platea dictumst. 
+        Suspendisse sapien magna, vestibulum non vehicula id, pellentesque in ante. Nullam 
+        sed auctor tellus. Sed ipsum sem, dapibus nec eros in, feugiat sagittis mi. 
+        Nullam et dui interdum, varius nibh eu, efficitur metus.
+        risus.
+offeringPrice:
+  blurbs:
+    - image: /img/coffee.png
+      heading: Great price
+      text: >
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc finibus 
+        sem lum non vehicula id, pellentesque in ante. Nullam 
         sed auctor tellus. Sed ipsum sem, dapibus nec eros in, feugiat sagittis mi. 
         Nullam et dui interdum, varius nibh eu, efficitur metus.
         risus.

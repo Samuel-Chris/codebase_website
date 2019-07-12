@@ -1,6 +1,8 @@
 import React from 'react'
 import Helmet from 'react-helmet'
-import Offerings from '../Offerings'
+import OfferingLeft from '../OfferingLeft'
+import OfferingSpeed from '../OfferingSpeed'
+import OfferingPrice from '../OfferingPrice'
 import Testimonials from '../Testimonials'
 import PropTypes from 'prop-types'
 import Button from '../button/button'
@@ -12,7 +14,9 @@ const HomePageTemplate = ({
   subtitle,
   heading,
   description,
-  offerings,
+  offeringLeft,
+  offeringSpeed,
+  offeringPrice,
   meta_title,
   meta_description,
   testimonials,
@@ -46,9 +50,11 @@ const HomePageTemplate = ({
                   </h3>
                   <p>{description}</p>
                 </div>
-                <Offerings gridItems={offerings.blurbs} />
                 <h2 className='has-text-weight-semibold is-size-2'>Testimonials</h2>
-                <Testimonials testimonials={testimonials} />
+                <OfferingLeft gridItems={offeringLeft.blurbs} />
+                <OfferingSpeed gridItems={offeringSpeed.blurbs} />
+                <OfferingPrice gridItems={offeringPrice.blurbs} />
+
               </div>
             </div>
           </div>
@@ -65,7 +71,13 @@ HomePageTemplate.propTypes = {
   meta_description: PropTypes.string,
   heading: PropTypes.string,
   description: PropTypes.string,
-  offerings: PropTypes.shape({
+  offeringLeft: PropTypes.shape({
+    blurbs: PropTypes.array,
+  }),
+  offeringSpeed: PropTypes.shape({
+    blurbs: PropTypes.array,
+  }),
+  offeringPrice: PropTypes.shape({
     blurbs: PropTypes.array,
   }),
   testimonials: PropTypes.array,

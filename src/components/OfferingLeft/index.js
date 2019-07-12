@@ -3,10 +3,10 @@ import PropTypes from 'prop-types'
 
 import Button from '../button/button'
 
-import './offerings.css'
+import './offeringLeft.css'
 import '../../assets/css/global.css'
 
-const Offerings = ({ gridItems }) => (
+const OfferingLeft = ({ gridItems }) => (
   <div className=''>
     {gridItems.map(item => (    
         <div key={item.image} className='container two-grid' style={{borderRadius: '5px'}}>
@@ -25,7 +25,7 @@ const Offerings = ({ gridItems }) => (
   </div>
 )
 
-Offerings.propTypes = {
+OfferingLeft.propTypes = {
   gridItems: PropTypes.arrayOf(
     PropTypes.shape({
       image: PropTypes.string,
@@ -35,4 +35,4 @@ Offerings.propTypes = {
   ),
 }
 
-export default Offerings
+export default OfferingLeft
