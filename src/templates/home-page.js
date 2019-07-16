@@ -19,6 +19,8 @@ const HomePage = ({data}) => {
         offeringLeft={frontmatter.offeringLeft}
         offeringSpeed={frontmatter.offeringSpeed}
         offeringPrice={frontmatter.offeringPrice}
+        ourProcess={frontmatter.ourProcess}
+        process={frontmatter.process}
         testimonials={frontmatter.testimonials}
       />
     </Layout>
@@ -60,6 +62,20 @@ export const pageQuery = graphql`
           }
         }
         offeringPrice {
+          blurbs {
+            image
+            heading
+            text
+          }
+        }
+        ourProcess {
+          blurbs {
+            image
+            heading
+            text
+          }
+        }
+        process {
           blurbs {
             image
             heading

@@ -10,14 +10,16 @@ const OfferingLeft = ({ gridItems }) => (
   <div className=''>
     {gridItems.map(item => (    
         <div key={item.image} className='container two-grid' style={{borderRadius: '5px'}}>
-          <section className=''>
-          <p className='image-section'>
-          <img alt='' src={item.image} /></p>
+          <section className='image-section'>
+          <div className=''>
+          <img alt='' src={item.image} /></div>
       </section>
       <section className='text-section'>
-        <h1>{item.heading}</h1>
-        <p>{item.text}</p>
-        <Button text={'Learn More'}></Button>
+        <div className='left-content'>
+          <h1>{item.heading}</h1>
+          <p>{item.text}</p>
+          <Button text={'Learn More'}></Button>
+        </div>
       </section>
     </div>
 

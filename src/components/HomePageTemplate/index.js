@@ -6,6 +6,8 @@ import OfferingPrice from '../OfferingPrice'
 import Testimonials from '../Testimonials'
 import PropTypes from 'prop-types'
 import Button from '../button/button'
+import OurProcess from '../OurProcess/index'
+import Process from '../Process/index'
 
 import './index.css'
 
@@ -17,6 +19,8 @@ const HomePageTemplate = ({
   offeringLeft,
   offeringSpeed,
   offeringPrice,
+  ourProcess,
+  process,
   meta_title,
   meta_description,
   testimonials,
@@ -54,7 +58,8 @@ const HomePageTemplate = ({
                 <OfferingLeft gridItems={offeringLeft.blurbs} />
                 <OfferingSpeed gridItems={offeringSpeed.blurbs} />
                 <OfferingPrice gridItems={offeringPrice.blurbs} />
-
+                <OurProcess gridItems={ourProcess.blurbs} />
+                <Process gridItems={process.blurbs} />
               </div>
             </div>
           </div>
@@ -78,6 +83,12 @@ HomePageTemplate.propTypes = {
     blurbs: PropTypes.array,
   }),
   offeringPrice: PropTypes.shape({
+    blurbs: PropTypes.array,
+  }),
+  ourProcess: PropTypes.shape({
+    blurbs: PropTypes.array,
+  }),
+  process: PropTypes.shape({
     blurbs: PropTypes.array,
   }),
   testimonials: PropTypes.array,

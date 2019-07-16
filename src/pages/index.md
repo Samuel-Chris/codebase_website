@@ -14,44 +14,42 @@ description: >-
   adipisci velit...
 offeringLeft:
   blurbs:
-    - image: /img/coffee.png
-      heading: Faster time to market
+    - image: /img/iphone.png
+      heading: Get your app to market faster
       text: >
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc finibus 
-        sem a sem ultrices, eget sagittis magna tempor. Quisque pulvinar lorem 
-        molestie sapien ornare cursus. Praesent eget volutpat est. Proin at 
-        sagittis ex. Duis quis dui magna. Nullam urna purus, blandit vitae tincidunt ut, 
-        scelerisque eu sem. Etiam porttitor elit eget mi luctus, vitae blandit enim pretium. 
-        Aenean nec hendrerit leo, a bibendum magna. In hac habitasse platea dictumst. 
-        Suspendisse sapien magna, vestibulum non vehicula id, pellentesque in ante. Nullam 
-        sed auctor tellus. Sed ipsum sem, dapibus nec eros in, feugiat sagittis mi. 
-        Nullam et dui interdum, varius nibh eu, efficitur metus.
-        risus.
+        The experience that our team has mixed with the lastest technology allows us to develop at record speeds. 
 offeringSpeed:
   blurbs:
-    - image: /img/coffee.png
-      heading: Faster time to market
+    - image: /img/iphone.png
+      heading: Almost half the cost of native development
       text: >
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc finibus 
-        sem a sem ultrices, eget sagittis magna tempor. Quisque pulvinar lorem 
-        molestie sapien ornare cursus. Praesent eget volutpat est. Proin at 
-        sagittis ex. Duis quis dui magna. Nullam urna purus, blandit vitae tincidunt ut, 
-        scelerisque eu sem. Etiam porttitor elit eget mi luctus, vitae blandit enim pretium. 
-        Aenean nec hendrerit leo, a bibendum magna. In hac habitasse platea dictumst. 
-        Suspendisse sapien magna, vestibulum non vehicula id, pellentesque in ante. Nullam 
-        sed auctor tellus. Sed ipsum sem, dapibus nec eros in, feugiat sagittis mi. 
-        Nullam et dui interdum, varius nibh eu, efficitur metus.
-        risus.
+        You will get beautiful, smooth apps for both Andriod and IOS for much less. See for yourself, check our quote app that will tell you how much you can actually save.
 offeringPrice:
   blurbs:
-    - image: /img/coffee.png
-      heading: Great price
+    - image: /img/iphone.png
+      heading: Almost half the cost of native development
       text: >
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc finibus 
-        sem lum non vehicula id, pellentesque in ante. Nullam 
-        sed auctor tellus. Sed ipsum sem, dapibus nec eros in, feugiat sagittis mi. 
-        Nullam et dui interdum, varius nibh eu, efficitur metus.
-        risus.
+        You will get beautiful, smooth apps for both Andriod and IOS for much less. See for yourself, check our quote app that will tell you how much you can actually save.
+ourProcess:
+  blurbs:
+    - image: /img/iphone.png
+      heading: Our process is designed to give you the best value.
+      text: >
+        You will get beautiful, smooth apps for both Andriod and IOS for much less. See for yourself, check our quote app that will tell you how much you can actually save.
+process:
+  blurbs:
+    - image: /img/prototype_icon.png
+      heading: Our process is designed to give you the best value.
+      text: >
+        You will get beautiful, smooth apps for both Andriod and IOS for much less. See for yourself, check our quote app that will tell you how much you can actually save.
+    - image: /img/build_icon.png
+      heading: Our process is designed to give you the best value.
+      text: >
+        You will get beautiful, smooth apps for both Andriod and IOS for much less. See for yourself, check our quote app that will tell you how much you can actually save.
+    - image: /img/launch_icon.png
+      heading: Our process is designed to give you the best value.
+      text: >
+        You will get beautiful, smooth apps for both Andriod and IOS for much less. See for yourself, check our quote app that will tell you how much you can actually save.
 testimonials:
   - author: Vaibhav Sharma
     quote: >-
