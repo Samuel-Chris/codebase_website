@@ -2,6 +2,7 @@
 templateKey: 'home-page'
 title: We create amazing   cross-platform experiences
 subtitle: We bring your product to all major platforms for a fraction of the cost and time.
+header_image: /img/codebase.png
 meta_title: Home | Codebase Studio - Cross-platform mobile and web development agency
 meta_description: >-
   Cum sociis natoque penatibus et magnis dis parturient montes, nascetur
@@ -39,15 +40,15 @@ ourProcess:
 process:
   blurbs:
     - image: /img/prototype_icon.png
-      heading: Our process is designed to give you the best value.
+      heading: Design & Prototype
       text: >
         You will get beautiful, smooth apps for both Andriod and IOS for much less. See for yourself, check our quote app that will tell you how much you can actually save.
     - image: /img/build_icon.png
-      heading: Our process is designed to give you the best value.
+      heading: Code & Test
       text: >
         You will get beautiful, smooth apps for both Andriod and IOS for much less. See for yourself, check our quote app that will tell you how much you can actually save.
     - image: /img/launch_icon.png
-      heading: Our process is designed to give you the best value.
+      heading: Launch
       text: >
         You will get beautiful, smooth apps for both Andriod and IOS for much less. See for yourself, check our quote app that will tell you how much you can actually save.
 testimonials:

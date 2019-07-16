@@ -14,6 +14,7 @@ import './index.css'
 const HomePageTemplate = ({
   title,
   subtitle,
+  header_image,
   heading,
   description,
   offeringLeft,
@@ -39,6 +40,7 @@ const HomePageTemplate = ({
           <Button text={'Learn More'}></Button>
         </div>
         <div className='header-image'>
+          <img alt='' src={header_image} />
         </div>
     </section>
     <section className='section section--gradient'>
@@ -59,7 +61,9 @@ const HomePageTemplate = ({
                 <OfferingSpeed gridItems={offeringSpeed.blurbs} />
                 <OfferingPrice gridItems={offeringPrice.blurbs} />
                 <OurProcess gridItems={ourProcess.blurbs} />
-                <Process gridItems={process.blurbs} />
+                <div className=''>
+                  <Process gridItems={process.blurbs} />
+                </div>
               </div>
             </div>
           </div>
@@ -72,6 +76,7 @@ const HomePageTemplate = ({
 HomePageTemplate.propTypes = {
   title: PropTypes.string,
   subtitle: PropTypes.string,
+  header_image: PropTypes.string,
   meta_title: PropTypes.string,
   meta_description: PropTypes.string,
   heading: PropTypes.string,

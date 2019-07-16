@@ -1,8 +1,9 @@
 .info-card{
     width: 100%;
     max-width: 300px;
-    margin: 10%;
+    margin: auto;
     text-align: center;
+    
 }
 
 .cards{
