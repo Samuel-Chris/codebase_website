@@ -9,11 +9,11 @@ import '../../assets/css/global.css'
 const OfferingSpeed = ({ gridItems }) => (
   <div className=''>
     {gridItems.map(item => (    
-      <div key={item.image} className='two-grid' style={{borderRadius: '5px'}}>
+      <div key={item.image} className='container two-grid' style={{borderRadius: '5px'}}>
       <section className='text-section'>
-        <div className='right-content'>
+        <div className='left-content'>
           <h1>{item.heading}</h1>
-          <p>{item.text}</p>
+          <p className='paragraph-section'>{item.text}</p>
           <Button text={'Learn More'}></Button>
         </div>
       </section>

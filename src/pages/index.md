@@ -9,22 +9,22 @@ meta_description: >-
   ridiculus mus. Aenean eu leo quam. Pellentesque ornare sem lacinia quam
   venenatis vestibulum. Sed posuere consectetur est at lobortis. Cras mattis
   consectetur purus sit amet fermentum.
-heading: Lorem ipsum dolor sit amet
+heading: We bring your great ideas to life.
 description: >-
   Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur,
   adipisci velit...
 offeringLeft:
   blurbs:
-    - image: /img/iphone.png
-      heading: Get your app to market faster
+    - image: /img/develop.png
+      heading: Develop once, deploy everywhere
       text: >
-        The experience that our team has mixed with the lastest technology allows us to develop at record speeds. 
+        You no longer need to develop seperate apps for each platform. We use state of the art technology that allows us to develop your app once and output two native apps for both IOS and Andriod.
 offeringSpeed:
   blurbs:
-    - image: /img/iphone.png
-      heading: Almost half the cost of native development
+    - image: /img/speed.png
+      heading: Go to market faster
       text: >
-        You will get beautiful, smooth apps for both Andriod and IOS for much less. See for yourself, check our quote app that will tell you how much you can actually save.
+        Compared to native development, our experienced developers using Flutter can develop your project in record time. 
 offeringPrice:
   blurbs:
     - image: /img/iphone.png
@@ -42,15 +42,15 @@ process:
     - image: /img/prototype_icon.png
       heading: Design & Prototype
       text: >
-        You will get beautiful, smooth apps for both Andriod and IOS for much less. See for yourself, check our quote app that will tell you how much you can actually save.
+        We can help take your idea and design a graphical wireframe to as a prototype to test the user experience without investing a lot of time and resources.
     - image: /img/build_icon.png
-      heading: Code & Test
+      heading: Coding sprints
       text: >
-        You will get beautiful, smooth apps for both Andriod and IOS for much less. See for yourself, check our quote app that will tell you how much you can actually save.
+        Your graphical prototype will be used to as a blueprint, allowing our team to build fully-functional product, looking and feeling exactly right.
     - image: /img/launch_icon.png
-      heading: Launch
+      heading: Test & Launch
       text: >
-        You will get beautiful, smooth apps for both Andriod and IOS for much less. See for yourself, check our quote app that will tell you how much you can actually save.
+        We will meticulously test your project's code as well as its functionality on various devices to ensure your product provides a great user experience.
 testimonials:
   - author: Vaibhav Sharma
     quote: >-

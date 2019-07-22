@@ -10,6 +10,7 @@ import OurProcess from '../OurProcess/index'
 import Process from '../Process/index'
 
 import './index.css'
+import '../../assets/css/global.css'
 
 const HomePageTemplate = ({
   title,
@@ -31,7 +32,7 @@ const HomePageTemplate = ({
       <title>{meta_title}</title>
       <meta name='description' content={meta_description} />
     </Helmet>
-    <section className='header-content'>
+    <section className='container header-content'>
       <div className='header-text'>
           <h1>
               {title}
@@ -49,14 +50,14 @@ const HomePageTemplate = ({
         <div className=''>
           <div className=''>
             <div className=''>
-              <div className=''>
-                <div>
-                  <h3 className=''>
+              <div >
+                <div className='header ctr'>
+                  <h1 className='titles'>
                     {heading}
-                  </h3>
-                  <p>{description}</p>
+                  </h1>
+
                 </div>
-                <h2 className='has-text-weight-semibold is-size-2'>Testimonials</h2>
+
                 <OfferingLeft gridItems={offeringLeft.blurbs} />
                 <OfferingSpeed gridItems={offeringSpeed.blurbs} />
                 <OfferingPrice gridItems={offeringPrice.blurbs} />

@@ -15,9 +15,9 @@ const OfferingLeft = ({ gridItems }) => (
           <img alt='' src={item.image} /></div>
       </section>
       <section className='text-section'>
-        <div className='left-content'>
+        <div className='right-content'>
           <h1>{item.heading}</h1>
-          <p>{item.text}</p>
+          <p className='paragraph-section'>{item.text}</p>
           <Button text={'Learn More'}></Button>
         </div>
       </section>

@@ -1,0 +1,16 @@
+.navbar{
+    width: 100%;
+    background-color: aquamarine;
+    display: flex;
+    height: 80px;
+    align-items: center;
+}
+
+.nav{
+
+
+}
+
+.navbar-item{
+    margin: 20px;
+}
