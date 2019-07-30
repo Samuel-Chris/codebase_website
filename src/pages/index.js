@@ -21,7 +21,12 @@ class Homepage extends React.Component {
 
         return (
             <Layout>
-                <Helmet title={siteTitle} />
+                <Helmet 
+                    title={siteTitle} 
+                
+                
+                
+                />
 
                 <section id="one" className="main style1">
                     <div className="grid-wrapper">
