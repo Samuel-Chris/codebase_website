@@ -1,5 +1,4 @@
 import React from 'react'
-
 import codebaseLogo from '../assets/images/codebase_logo.png'
 
 class Nav extends React.Component {
