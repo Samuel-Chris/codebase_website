@@ -1,21 +1,48 @@
 import React from 'react'
-import codebaseLogo from '../assets/images/codebase_logo.png'
+import Button from './SubComponents/Button'
+import codebaseLogo from '../assets/images/codebase_logo.svg'
+
 
 class Nav extends React.Component {
+    constructor(props){
+        super(props);
+        
+        this.state = {
+            scrolled: false
+        }
+
+    }
+
+    componentDidMount() {
+        window.addEventListener('scroll', function(e){
+            if (document.documentElement.scrollTop > 100) {
+                this.setState({
+                    scrolled: true
+                });
+            } else if (document.documentElement.scrollTop < 100) {
+                this.setState({
+                    scrolled: false
+                });
+            }
+        }.bind(this));
+    }
+
     render() {
         return (
-            <section id="nav">
-                <div className="inner">
+            <nav className={this.state.scrolled && 'colored'}>
+                <div className="inner nav">
                     <img className="image logo" src={codebaseLogo} alt="Codebase logo"/>
-                    <h1>Hi, we are a <strong>cross-platform</strong> <br />
-                    development team specializing in <a target="_blank" rel="noopener" href="http://flutter.dev">Flutter</a>.</h1>
-                    <p>We can deliver native quality apps using one codebase <br /> 
-                    saving you time, money and energy.</p>
-                    <ul className="actions">
-                        <li><a href="#four" className="button scrolly">Get a Free Quote</a></li>
+                    <ul>
+                        <li><a href="#">Why Choose Us</a></li>
+                        <li><a href="#">Pricing</a></li>
+                        <li><a href="#">Process</a></li>
+                        <li><a href="#">Blog</a></li>
                     </ul>
+                    <Button white small>
+                        Let's Chat
+                    </Button>
                 </div>
-            </section>
+            </nav>
         )
     }
 }
