@@ -28,6 +28,7 @@
 		background: _palette(bg);
 
 		.body.is-loading {
+			display: none;
 			*, *:before, *:after {
 				@include vendor('animation', 'none !important');
 				@include vendor('transition', 'none !important');
@@ -1530,7 +1531,10 @@ nav.mobile-nav {
 		ul {
 			list-style: none;
 			padding: 2rem 1rem;
-			font-size: 1.875rem;
+			color: #626262;
+			h3 {
+				font-size: 1.875rem;
+			}
 			&::after {
 				content: '';
 				height: 2px;
@@ -1596,7 +1600,7 @@ nav.colored {
 		}
 	}
 	@include breakpoint(980px) {
-		padding-top: 8rem;
+		padding-top: 5.5rem;
 	}
 } 
 

@@ -28,14 +28,14 @@ export default class MobileNav extends Component {
             <nav className="mobile-nav">
                 <div className="main">
                     <img src={codebaseLogo} alt="codebase logo" />
-                    <HamburgerMenu isOpen={this.state.isOpen} menuClicked={this.handleClick.bind(this)} strokeWidth={2} />
+                    <HamburgerMenu isOpen={this.state.isOpen} menuClicked={this.handleClick.bind(this)} strokeWidth={2} width={20} height={15} />
                 </div>
 
                 <div className={"hidden " + visible}>
                     <ul>
-                        <li><h1><a href="#">Why Choose Us</a></h1></li>
-                        <li><h1><a href="#">Pricing</a></h1></li>
-                        <li><h1><a href="#">Process</a></h1></li>
+                        <li><h3><a href="#">Why Choose Us</a></h3></li>
+                        <li><h3><a href="#">Pricing</a></h3></li>
+                        <li><h3><a href="#">Process</a></h3></li>
                     </ul>
                     <p className="blog">Blog</p>
                     <Button>How we can help</Button>

@@ -29,7 +29,7 @@ class Nav extends React.Component {
 
     render() {
         return (
-            <nav className={this.state.scrolled && 'colored'}>
+            <nav className={this.state.scrolled ? 'colored' : 'none'}>
                 <div className="inner nav">
                     <img className="image logo" src={codebaseLogo} alt="Codebase logo"/>
                     <ul>
