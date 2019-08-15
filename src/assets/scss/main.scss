@@ -1502,6 +1502,7 @@ nav.mobile-nav {
 	width: 100%;
 	transition: 500ms ease-in-out;
 	z-index: 10;
+	height: 3.725rem;
 	.main {
 		background-color:aqua;
 		display: flex;
@@ -1509,9 +1510,10 @@ nav.mobile-nav {
 		justify-content: space-between;
 		flex-direction: row;
 		padding: 0 1.5rem;
-		height: 6.725rem;
+		height: 3.725rem;
 		z-index: 10;
 		border-bottom: 1px solid #EBEBEB;
+		position: relative;
 	}
 	.hidden {
 		position: absolute;
@@ -1553,6 +1555,7 @@ nav.mobile-nav {
 	}
 	.visible {
 		top: 100%;
+		height: 100vh;
 		opacity: 1;
 		z-index: 9;
 	}
@@ -1561,6 +1564,7 @@ nav.mobile-nav {
 nav.colored {
 	background: rgba($color: #C4C4C4, $alpha: 0.6);
 	height: 4rem; 
+	z-index: 10;
 }
 
 .hero1 {
@@ -1750,6 +1754,7 @@ nav.colored {
 
 .hero5 {
 	text-align: center;
+	min-height: 40rem;
 	.lead {
 		margin: 0 auto;
 	}
