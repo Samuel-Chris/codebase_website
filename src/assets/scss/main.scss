@@ -1506,10 +1506,14 @@ nav {
 		// button {
 		// 	transform: scale(0.75);
 		// }
-		button:hover {
-			color: #ffffff;
-			box-shadow: none;
-			background: #693FAD;
+		// button:hover {
+		// 	color: #ffffff;
+		// 	box-shadow: none;
+		// 	background: #693FAD;
+		// }
+		h3 {
+			font-weight: normal;
+			margin-bottom: 0;
 		}
 	}
 }

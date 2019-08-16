@@ -56,9 +56,9 @@ class Nav extends React.Component {
                         <li><a href="#">Process</a></li>
                         <li><a href="#">Blog</a></li>
                     </ul>
-                    <Button color="white" small>
-                        Let's Chat
-                    </Button>
+                    <h3 className="lead">
+                        <a href="#">Let's Chat</a>
+                    </h3>
                 </div>
             </nav>
         )
