@@ -34,6 +34,10 @@ module.exports = {
     'gatsby-plugin-sass',
     `gatsby-plugin-sitemap`,
     'gatsby-plugin-offline',
-    
+    {
+      resolve: 'gatsby-plugin-emotion',
+      options: {
+      },
+    },
   ],
 }

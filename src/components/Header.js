@@ -22,6 +22,10 @@ class Header extends React.Component {
     window.addEventListener('resize', this.updateState);
   }
 
+  componentWillUnmount() {
+    window.removeEventListener('resize', this.updateState);
+  }
+
   updateState() {
     this.setState({isMobile: document.documentElement.clientWidth <= 981})
   }

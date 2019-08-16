@@ -26,7 +26,7 @@ class Homepage extends React.Component {
     
     updateState() {
       console.log(document.documentElement.clientWidth);
-      this.setState({isMobile: document.documentElement.clientWidth <= 979})
+      this.setState({isMobile: document.documentElement.clientWidth <= 981})
     }
     
 

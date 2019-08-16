@@ -1,5 +1,7 @@
 import React from 'react'
-import HeroImage from '../../assets/images/pic04.jpg'
+import Fade from 'react-reveal/fade'
+import Zoom from 'react-reveal/zoom'
+
 
 const ListStyles = {
     listStyleImage: 'url({ListStyleImage})'
@@ -10,11 +12,13 @@ export default function Hero3() {
         <div className="hero hero3">
             <div className="grid-wrapper">
                 <div className="col-7">
-                    <p className="lead"> How are we different?</p>
-                    <h1 className="lead"> Develop Once, Deploy Everywhere</h1>
-                    <p>We exclusively use Flutter, Google’s cross-platform technology that is able to target all major platforms. There are huge benifits in developing with Flutter. </p>
-                    
+                    <Fade bottom>
+                        <p className="lead"> How are we different?</p>
+                        <h1 className="lead"> Develop Once, Deploy Everywhere</h1>
+                        <p>We exclusively use Flutter, Google’s cross-platform technology that is able to target all major platforms. There are huge benifits in developing with Flutter. </p>
+                    </Fade>
                     <dl>
+                       <Fade bottom>
                         <dt className="lead">Native Performance</dt>
                         <dd>Flutter compiles down to bytecode, which allows it to run at 60 & 120 FPS, exactly like a native app</dd>
 
@@ -23,11 +27,14 @@ export default function Hero3() {
 
                         <dt className="lead">Built in Record Time</dt>
                         <dd>Not only do we only have to develop one codebase for all platforms, Flutter </dd>
+                       </Fade>
                     </dl>
                 </div>
 
                 <div className="col-5 img-container">
-                    <img src="https://placehold.it/360" alt=""/>
+                    <Zoom>
+                        <img src="https://placehold.it/360" alt=""/>
+                    </Zoom>
                 </div>
             </div>
         </div>

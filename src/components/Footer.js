@@ -11,9 +11,9 @@ class Footer extends React.Component {
                 <div className="grid-wrapper">
                     <div className="col-4">
                         <ul className="about">
-                            <li>About</li>
-                            <li>Policy</li>
-                            <li>Terms</li>
+                            <li><a href="#">About</a></li>
+                            <li><a href="#">Policy</a></li>
+                            <li><a href="#">Terms</a></li>
                         </ul>
                     </div>
 

@@ -1,42 +1,34 @@
 import React from 'react'
+import styled from '@emotion/styled'
+import { css } from '@emotion/core'
 
-
-const styles = {
-    padding: '0 3rem',
-    minWidth: '3.75rem',
-    backgroundColor: '#693FAD',
-    borderRadius: '5rem',
-    color: '#ffffff',
-    boxShadow: '5px 10px 20px rgba(0, 0, 0, 0.25)',
-    fontSize: '1.125rem',
-    height: '4rem',
-    display: 'flex',
-    alignItems: 'center',
-    justifyContent: 'center'
-}
-
-const stylesWhite = {
-    color: '#626262',
-    minWidth: '2rem',
-    border: '2px solid #626262',
-    padding: '0 1rem',
-    borderRadius: '2.5rem',
-    fontSize: '0.75rem',
-    height: '2rem',
-    display: 'flex',
-    alignItems: 'center',
-    justifyContent: 'center'
-}
-
-// const stylesSmall= {
-//     height: '2rem',
-//     fontSize: '1rem'
-// }
 
 export default function Button(props) {
+    const buttonColor = props.color ? props.color : "#693FAD";
+    const color = props.color ? "#693FAD" : "#ffffff";
+
+    const Button = styled.button`
+        padding: 0 3rem;
+        min-width: 3.75rem;
+        background-color: ${buttonColor};
+        border: 2px solid #693FAD;
+        border-radius: 5rem;
+        color: ${color};
+        box-shadow: 5px 10px 20px rgba(0, 0, 0, 0.25);
+        font-size: 1.125rem;
+        height: 4rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: 200ms ease-in-out;
+        &:hover{
+            box-shadow: none;
+        }
+    `
+
     return (
-         <button style={props.white ? stylesWhite : styles}> 
+         <Button> 
             {props.children}
-        </button>
+        </Button>
     )
 }

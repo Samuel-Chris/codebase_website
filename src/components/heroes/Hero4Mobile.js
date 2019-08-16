@@ -14,8 +14,8 @@ export default function Hero4Mobile() {
                     <h1>Download the Cost Calculator</h1>
                     <p>Not only will you be able to test out performance a Flutter app is, but you will be able to compare our development costs to native development.</p>  
                     <div className="btns">
-                        <Button white>Button</Button>
-                        <Button white>Button</Button>
+                        <Button color="white">Button</Button>
+                        <Button color="white">Button</Button>
                     </div>
                 </div>
             </div>

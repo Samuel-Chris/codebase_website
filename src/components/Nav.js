@@ -15,6 +15,22 @@ class Nav extends React.Component {
 
     componentDidMount() {
         window.addEventListener('scroll', function(e){
+            console.log("scrolled");
+            console.log(document.body.scrollTop);
+            if (document.documentElement.scrollTop > 100 || document.body.scrollTop > 100) {
+                this.setState({
+                    scrolled: true
+                });
+            } else if (document.documentElement.scrollTop < 100) {
+                this.setState({
+                    scrolled: false
+                });
+            }
+        }.bind(this));
+    }
+
+    componentWillUnmount() {
+        window.removeEventListener('scroll', function(e){
             if (document.documentElement.scrollTop > 100) {
                 this.setState({
                     scrolled: true
@@ -27,6 +43,10 @@ class Nav extends React.Component {
         }.bind(this));
     }
 
+   updateState() {
+
+   }
+
     render() {
         return (
             <nav className={this.state.scrolled ? 'colored' : 'none'}>
@@ -38,7 +58,7 @@ class Nav extends React.Component {
                         <li><a href="#">Process</a></li>
                         <li><a href="#">Blog</a></li>
                     </ul>
-                    <Button white small>
+                    <Button color="white" small>
                         Let's Chat
                     </Button>
                 </div>

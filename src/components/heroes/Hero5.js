@@ -1,5 +1,6 @@
 import React from 'react'
 import Button from '../SubComponents/Button'
+import Bounce from 'react-reveal/bounce'
 
 export default function Hero5() {
     return (
@@ -8,7 +9,7 @@ export default function Hero5() {
             <p className="lead">Let's chat!</p>
             <h1 className="lead">Want to talk about your project?</h1>
             <p>Our goal is to help you take your idea from concept to creation. Let’s chat and see how we can bring you value.</p>
-            <Button>Let's chat!</Button>
+            <Bounce><Button>Let's chat!</Button></Bounce>
           </div>
         </div>
     )
