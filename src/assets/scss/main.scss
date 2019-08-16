@@ -1512,7 +1512,8 @@ nav {
 		// 	background: #693FAD;
 		// }
 		h3 {
-			font-weight: normal;
+			font-weight: bold;
+			color: #693FAD;
 			margin-bottom: 0;
 		}
 	}
@@ -1599,9 +1600,15 @@ nav.colored {
 		margin: 3rem 0;
 		width: 70%;
 	}
+	.img-container {
+		display: flex;
+		justify-content: flex-end;
+		height: auto;
+	}
 	img {
 		border-radius: 3rem;
 		max-width: 22.5rem;
+		align-self: flex-start;
 	}
 	@include breakpoint(1100px) {
 		min-height: 60vh;
