@@ -15,7 +15,6 @@ class Nav extends React.Component {
 
     componentDidMount() {
         window.addEventListener('scroll', function(e){
-            console.log(document.body.scrollTop);
             if (document.documentElement.scrollTop > 100 || document.body.scrollTop > 100) {
                 this.setState({
                     scrolled: true
