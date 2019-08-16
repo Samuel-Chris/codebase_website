@@ -1,6 +1,6 @@
 import React from 'react'
 import Button from '../SubComponents/Button'
-import Bounce from 'react-reveal/bounce'
+import Bounce from 'react-reveal/Bounce'
 
 export default function Hero5() {
     return (

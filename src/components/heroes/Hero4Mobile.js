@@ -1,13 +1,16 @@
 import React from 'react'
+import Zoom from 'react-reveal/Zoom'
 import Button from '../SubComponents/Button'
 
 export default function Hero4Mobile() {
     return (
         <div className="hero hero4-mobile">
             <div className="grid-wrapper">
-                <div className="col-12">
-                    <img src="https://placehold.it/394x707" alt=""/>
-                </div>
+               <Zoom>
+                    <div className="col-12">
+                        <img src="https://placehold.it/394x707" alt=""/>
+                    </div>
+               </Zoom>
 
                 <div className="col-12 main">
                     <p>How much will my project cost?</p>

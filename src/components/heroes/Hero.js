@@ -1,6 +1,6 @@
 import React from 'react'
 import Button from '../SubComponents/Button'
-import Fade from 'react-reveal/fade'
+import Fade from 'react-reveal/Fade'
 
 
 export default function Hero() {

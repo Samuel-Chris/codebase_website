@@ -1,5 +1,5 @@
 import React from 'react'
-import Zoom from 'react-reveal/zoom'
+import Zoom from 'react-reveal/Zoom'
 import Button from '../SubComponents/Button'
 
 export default function Hero4() {
