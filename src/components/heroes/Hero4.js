@@ -1,6 +1,8 @@
 import React from 'react'
 import Zoom from 'react-reveal/Zoom'
-import Button from '../SubComponents/Button'
+import Button from '../button/Button'
+import './hero-styles.scss'
+
 
 export default function Hero4() {
     return (

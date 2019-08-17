@@ -1,9 +1,8 @@
 import React from "react";
-import "../assets/scss/main.scss";
-import SEO from "./Seo";
-
-import Header from "./Header";
-import Footer from "./Footer";
+import "../../assets/scss/main.scss";
+import SEO from "../SEO/Seo";
+import Header from "../header/Header";
+import Footer from "../footer/Footer";
 
 class Template extends React.Component {
     constructor(props) {

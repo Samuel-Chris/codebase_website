@@ -1,6 +1,7 @@
 import React from 'react'
 import Fade from 'react-reveal/Fade'
-import Button from '../SubComponents/Button'
+import Button from '../button/Button'
+import './hero-styles.scss'
 import HeroIcon1 from '../../assets/images/hero_icon_1.svg'
 import HeroIcon2 from '../../assets/images/hero_icon_2.svg'
 import HeroIcon3 from '../../assets/images/hero_icon_3.svg'

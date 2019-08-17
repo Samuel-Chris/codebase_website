@@ -1,11 +1,6 @@
 import React from 'react'
-import Nav from './Nav'
-import MobileNav from './MobileNav'
-import Hero from './heroes/Hero'
-import Hero2 from './heroes/Hero2'
-import Hero3 from './heroes/Hero3'
-import Hero4 from './heroes/Hero4'
-import Hero5 from './heroes/Hero5'
+import Nav from '../nav/Nav'
+import MobileNav from '../nav/MobileNav'
 
 
 class Header extends React.Component {

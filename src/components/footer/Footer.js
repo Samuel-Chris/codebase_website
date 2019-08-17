@@ -1,7 +1,7 @@
 import React from 'react'
-import InstagramLogo from '../assets/images/instagram.svg'
-import MediumLogo from '../assets/images/medium.svg'
-import LinkedinLogo from '../assets/images/linkedin.svg'
+import InstagramLogo from '../../assets/images/instagram.svg'
+import MediumLogo from '../../assets/images/medium.svg'
+import LinkedinLogo from '../../assets/images/linkedin.svg'
 
 class Footer extends React.Component {
     render() {

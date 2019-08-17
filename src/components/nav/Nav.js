@@ -1,6 +1,5 @@
 import React from 'react'
-import Button from './SubComponents/Button'
-import codebaseLogo from '../assets/images/codebase_logo.svg'
+import codebaseLogo from '../../assets/images/codebase_logo.svg'
 
 
 class Nav extends React.Component {

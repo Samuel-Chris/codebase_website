@@ -1,11 +1,8 @@
 import React from 'react'
 import Fade from 'react-reveal/Fade'
 import Zoom from 'react-reveal/Zoom'
+import './hero-styles.scss'
 
-
-const ListStyles = {
-    listStyleImage: 'url({ListStyleImage})'
-}
 
 export default function Hero3() {
     return (
