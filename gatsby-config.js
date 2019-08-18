@@ -10,33 +10,8 @@ module.exports = {
     description: "We can build your app on all major platforms with one codebase in record time. Get a free quote."
   },
   plugins: [
-    'gatsby-plugin-react-helmet',
-    'gatsby-plugin-sass',
-    `gatsby-plugin-sitemap`,
-    'gatsby-plugin-offline',
     'gatsby-plugin-sharp',
     'gatsby-transformer-sharp',
-    {
-      resolve: 'gatsby-source-filesystem',
-      options: {
-        path: `${__dirname}/static/img`,
-        name: 'uploads',
-      },
-    },
-    {
-      resolve: 'gatsby-source-filesystem',
-      options: {
-        path: `${__dirname}/src/pages`,
-        name: 'pages',
-      },
-    },
-    {
-      resolve: 'gatsby-source-filesystem',
-      options: {
-        path: `${__dirname}/src/assets/images`,
-        name: 'images',
-      },
-    },
     {
       resolve: 'gatsby-transformer-remark',
       options: {
@@ -62,6 +37,32 @@ module.exports = {
         ],
       },
     },
+    'gatsby-plugin-react-helmet',
+    'gatsby-plugin-sass',
+    
+    {
+      resolve: 'gatsby-source-filesystem',
+      options: {
+        path: `${__dirname}/static/img`,
+        name: 'uploads',
+      },
+    },
+    {
+      resolve: 'gatsby-source-filesystem',
+      options: {
+        path: `${__dirname}/src/pages`,
+        name: 'pages',
+      },
+    },
+    {
+      resolve: 'gatsby-source-filesystem',
+      options: {
+        path: `${__dirname}/src/assets/images`,
+        name: 'images',
+      },
+    },
+    `gatsby-plugin-sitemap`,
+    'gatsby-plugin-offline',
     {
       resolve: 'gatsby-plugin-netlify-cms',
       options: {

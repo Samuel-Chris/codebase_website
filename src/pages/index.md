@@ -22,11 +22,11 @@ section2:
       heading: Prototyping
       text: >
        Creating a minimum viable product that you can test with real people
-    - image: /img/develop.png
+    - image: /img/codebase_logo.png
       heading: Full-scale Launch
       text: >
        We will work with you to design, develop & launch your new product
-    - image: /img/develop.png
+    - image: /img/codebase_logo.png
       heading: Continual Support
       text: >
        Ensuring a great user experience & developing features your users want
