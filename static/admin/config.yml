@@ -37,5 +37,5 @@ collections:
           - {label: Section5, name: section5, widget: object, fields: [
             {label: Heading, name: heading, widget: string},
             {label: Subheading, name: subheading, widget: string},
-            {label: Description, name: description, widget: text},
+            {label: Description, name: description, widget: text}
             ]}
