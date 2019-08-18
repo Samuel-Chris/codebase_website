@@ -21,6 +21,6 @@ collections:
           - {label: Meta_Description, name: meta_description, widget: string}
           - {label: Section1, name: section1, widget: object, fields: [{label: Heading, name: heading, widget: string}, {label: Description, name: description, widget: text}]}
           - {label: Section2, name: section2, widget: object, fields:[
-            {label: Heading, name: heading, widget: object, fields: [{{label: Heading, name: heading, widget: string}, {label: Subheading, name: subheading, widget: string}}]},
+            {label: Heading, name: heading, widget: object, fields: [{label: Heading, name: heading, widget: string}, {label: Subheading, name: subheading, widget: string}]},
             {label: Blurbs, name: how we can help you, widget: list, fields: label: [{label: Image, name: Image, widget: image}, {label: Heading, name: heading, widget: string}, {label: Description, name: text, widget: text}]}
             ]}
