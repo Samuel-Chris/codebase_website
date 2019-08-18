@@ -20,5 +20,5 @@ collections:
           - {label: Meta_Title, name: meta_title, widget: string}
           - {label: Meta_Description, name: meta_description, widget: string}
           - {label: Section1, name: section1, widget: object, fields: [{label: Heading, name: heading, widget: string}, {label: Description, name: description, widget: text}]}
-          - {label: Section2, name: section2, widget: object, fields: [{label: Heading, name: heading, widget: object, fields:[{label: Heading, name: heading, widget: string}, {label: Subheading, name: subheading, widget: string}]}, {label: Blurbs, name: blurbs, widget: object, fields:[{label: Image, name: image, widget: image}, {label: heading, name: heading, widget: string}, {label: Text, name: text, widget: string}]}]}
+          # - {label: Section2, name: section2, widget: object, fields: [{label: Heading, name: heading, widget: object, fields:[{label: Heading, name: heading, widget: string}, {label: Subheading, name: subheading, widget: string}]}, {label: Blurbs, name: blurbs, widget: object, fields:[{label: Image, name: image, widget: image}, {label: heading, name: heading, widget: string}, {label: Text, name: text, widget: string}]}]}
          
