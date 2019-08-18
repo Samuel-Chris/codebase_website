@@ -6,7 +6,7 @@ import HeroIcon1 from '../../assets/images/hero_icon_1.svg'
 import HeroIcon2 from '../../assets/images/hero_icon_2.svg'
 import HeroIcon3 from '../../assets/images/hero_icon_3.svg'
 
-export default function Hero2() {
+export default function Hero2({isMobile}) {
     return (
         <div className="hero hero2">
             <div className="grid-wrapper">
@@ -28,7 +28,7 @@ export default function Hero2() {
                     </div>
                 </Fade>    
 
-                <Fade bottom duration={500} delay={500}>
+                <Fade bottom duration={500} /*delay={isMobile ? 0 : 500}*/ delay={500}>
                     <div className="col-4 hero2-item">
                         <span className="image icon">
                             <img src={HeroIcon2} alt="Icon"/>
@@ -38,7 +38,7 @@ export default function Hero2() {
                     </div>
                 </Fade>    
 
-                <Fade bottom duration={500} delay={1000}>
+                <Fade bottom duration={500} /*delay={isMobile ? 0 : 1000}*/ delay={1000}>
                     <div className="col-4 hero2-item">
                         <span className="image icon">
                             <img src={HeroIcon3} alt="Icon"/>

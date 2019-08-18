@@ -37,7 +37,7 @@ export class IndexPageTemplate extends React.Component {
             <Layout>
                 <Helmet title={siteTitle} />
                 <Hero1 content={section1}/>
-                <Hero2 />
+                <Hero2 isMobile={this.state.isMobile}/>
                 <Hero3 />
                 {this.state.isMobile ? <Hero4Mobile /> : <Hero4 />}
                 <Hero5 />

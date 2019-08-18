@@ -16,8 +16,8 @@
 }
 
 .hero1 {
-	min-height: 100vh;
-	padding-top: 7rem;
+	min-height: calc(100vh - 6.725rem);
+	padding-top: 1rem;
 	p {
 		margin: 3rem 0;
 		width: 70%;
@@ -52,13 +52,21 @@
 			}
 		}
 	}
-	@include breakpoint(980px) {
-		padding-top: 5.5rem;
+	@include breakpoint(600px) {
+		.img-container {
+			display: none;
+			img {
+				display: none;
+			}
+		}
 	}
 } 
 
 .hero2 {
 	text-align: center;
+	img {
+		max-width: 50%;
+	}
 	h1 {
 		margin-bottom: 4rem;
 	}
@@ -86,8 +94,7 @@
 	}
 	img {
 		border-radius: 3rem;
-		width: 90%;
-		max-width: 22.5rem;
+		max-width: 90%;
 	}
 	.img-container {
 		display: flex;
@@ -136,7 +143,7 @@
 
 .hero4 {
 	margin: 7rem 0;
-	background: #4A3E7C;
+	background: #693FAD;
 	color: #ffffff;
 	min-height: 20vh;
 	max-height: 35rem;
@@ -182,7 +189,7 @@
 		color: #ffffff;
 	}
 	.main {
-		background: #4A3E7C;
+		background: #693FAD;
 		color: #ffffff;
 		flex-direction: column;
 		padding: 4rem 2rem; 
@@ -190,7 +197,7 @@
 	img {
 		width: 70%;
 		border-radius: 3rem;
-		max-width: 30rem;
+		max-width: 22.5rem;
 		display: block;
 		margin: 2rem auto;
 		box-shadow: -20px 4px 50px rgba(0, 0, 0, 0.25);
@@ -201,7 +208,9 @@
 		width: 100%;
 		justify-content: space-between;
 		button {
-			width: 10rem;
+			width: 8rem;
+			height: 3rem;
+			font-size: 1rem;
 		}
 	}
 }
