@@ -4,14 +4,15 @@ import Button from '../button/Button'
 import './hero-styles.scss'
 
 
-export default function Hero4() {
+export default function Hero4(props) {
+    const {subheading, heading, description, image} = props.content;
     return (
         <div className="hero hero4">
             <div className="grid-wrapper">
                 <div className="col-6 main">
-                    <p>How much will my project cost?</p>
-                    <h1>Download the Cost Calculator</h1>
-                    <p>Not only will you be able to test out performance a Flutter app is, but you will be able to compare our development costs to native development.</p>   
+                    <p>{subheading}</p>
+                    <h1>{heading}</h1>
+                    <p>{description}</p>   
                     <div className="btns">
                         <Button color="#ffffff" small>Button</Button>
                         <Button color="#ffffff" small>Button</Button>
@@ -19,7 +20,7 @@ export default function Hero4() {
                 </div>
                 <Zoom>
                     <div className="col-6 img-container">
-                       <img className="pc" src="https://placehold.it/394x707" alt=""/>
+                       <img className="pc" src={image.publicURL} alt=""/>
                     </div>
                 </Zoom>
             </div>

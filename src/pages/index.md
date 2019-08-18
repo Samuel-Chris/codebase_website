@@ -15,28 +15,32 @@ section1:
    heading: We help non-technical founders build technical things
    description: >-
     We are a cross-platform development agency that wants to grow your idea into a huge success.
+   image: /img/hero_icon_1.svg
 
 section2:
+  heading:
+    heading: How we can help you
+    subheading: What We Do
   blurbs:
-    - image: /img/codebase_logo.png
+    - image: /img/hero_icon_1.svg
       heading: Prototyping
       text: >
        Creating a minimum viable product that you can test with real people
-    - image: /img/codebase_logo.png
+    - image: /img/hero_icon_2.svg
       heading: Full-scale Launch
       text: >
        We will work with you to design, develop & launch your new product
-    - image: /img/codebase_logo.png
+    - image: /img/hero_icon_3.svg
       heading: Continual Support
       text: >
        Ensuring a great user experience & developing features your users want
 
 section3:
   heading:
-    - image: /img/codebase_logo.png
-      subheading: How are we different?  
-      heading: Develop Once, Deploy Everywhere
-      description: >
+    image: /img/hero_icon_3.svg
+    subheading: How are we different?  
+    heading: Develop Once, Deploy Everywhere
+    description: >
         We exclusively use Flutter, Google’s cross-platform technology that is able to target all major platforms. There are huge benifits in developing with Flutter.
   blurbs: 
     - title: Native Performance
@@ -52,6 +56,7 @@ section3:
 section4:
   subheading: How much will my project cost?
   heading: Download the Cost Calculator
+  image: /img/hero_icon_3.svg
   description: >
     Not only will you be able to test out performance a Flutter app is, but you will be able to compare our development costs to native development.
  

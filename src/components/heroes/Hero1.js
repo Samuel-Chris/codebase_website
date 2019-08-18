@@ -5,7 +5,7 @@ import './hero-styles.scss'
 
 
 export default function Hero1(props) {
-    const {heading, description} = props.content;
+    const {heading, description, image} = props.content;
     return (
         <div className="hero hero1">
            <div className="grid-wrapper">
@@ -19,7 +19,7 @@ export default function Hero1(props) {
 
                 <div className="col-5 img-container">
                    <Fade right>
-                    <img src="https://placehold.it/360" alt="Image"/>
+                    <img src={image.publicURL} alt="Image"/>
                    </Fade>
                 </div>
            </div>
