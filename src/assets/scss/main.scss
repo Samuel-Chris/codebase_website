@@ -27,7 +27,8 @@
 	body {
 		background: _palette(bg);
 		overflow-x: hidden;
-		padding-top: 6.725rem !important; 
+		// padding-top: 6.725rem !important; 
+		padding-top: 0 !important;
 		@include breakpoint(980px) {
 			padding-top: 3.725rem; 
 		}
@@ -1480,6 +1481,12 @@ h1.lead, h3.lead {
 	@include breakpoint(600px){
 		padding: 4rem 2rem;
 	}
+}
+
+.dummy-nav {
+	position: relative;
+	height: 6.725rem;
+	width: 100%;
 }
 
 
