@@ -17,7 +17,7 @@
 
 .hero1 {
 	min-height: calc(100vh - 6.725rem);
-	padding-top: 1rem;
+	padding-top: 0;
 	p {
 		margin: 3rem 0;
 		width: 70%;
@@ -175,7 +175,7 @@
 		display: flex;
 		margin: 2rem 0 0;
 		width: 100%;
-		justify-content: space-between;
+		justify-content: flex-start;
 	}
 }
 
@@ -206,11 +206,11 @@
 		display: flex;
 		margin: 2rem 0 0;
 		width: 100%;
-		justify-content: space-between;
+		justify-content: flex-start;
 		button {
 			width: 8rem;
 			height: 3rem;
-			font-size: 1rem;
+			font-size: 0.9rem;
 		}
 	}
 }
