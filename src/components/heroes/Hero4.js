@@ -20,7 +20,7 @@ export default function Hero4(props) {
                 </div>
                 <Zoom>
                     <div className="col-6 img-container">
-                       <img className="pc" src={image.publicURL} alt=""/>
+                       <img className="pc" src={image.publicURL} alt={heading}/>
                     </div>
                 </Zoom>
             </div>

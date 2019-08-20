@@ -27,7 +27,6 @@
 	body {
 		background: _palette(bg);
 		overflow-x: hidden;
-		// padding-top: 6.725rem !important; 
 		padding-top: 0 !important;
 		@include breakpoint(980px) {
 			padding-top: 3.725rem; 
@@ -270,7 +269,6 @@
 	select,
 	textarea {
 		@include vendor('appearance', 'none');
-		// background: _palette(border-bg);
 		border-radius: _size(border-radius);
 		border: none;
 		border: solid 1px _palette(border);
@@ -811,17 +809,11 @@
 		font-weight: _font(weight-bold);
 		height: auto;
 		letter-spacing: 0.125em;
-		// line-height: 1.3125rem;
-		// padding: 0 2em;
 		text-align: center;
 		text-decoration: none;
 		text-indent: 0.125em;
 		text-transform: uppercase;
 		white-space: nowrap;
-
-		// &:hover {
-		// 	background-color: _palette(border-bg);
-		// }
 
 		&:active {
 			background-color: _palette(border2-bg);
