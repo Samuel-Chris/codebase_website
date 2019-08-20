@@ -4,7 +4,7 @@ import Zoom from 'react-reveal/Zoom'
 import Button from '../button/Button'
 import './hero-styles.scss'
 
-export default function Hero2({isMobile, content}) {
+export default function Hero2({content}) {
     const {heading, blurbs} = content;
 
     return (

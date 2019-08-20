@@ -19,6 +19,9 @@
 	min-height: calc(100vh - 6.725rem);
 	padding-top: 0;
 	position: relative;
+	.main {
+		padding: 0;
+	}
 	p {
 		margin: 3rem 0;
 		width: 70%;
@@ -42,9 +45,6 @@
 		align-items: center;
 		justify-content: center;
 		.grid-wrapper {
-			.main {
-				padding: 0;
-			}
 			.img-container {
 				display: flex;
 				justify-content: center;
@@ -59,14 +59,13 @@
 	@include breakpoint(600px) {
 		justify-content: flex-start;
 		align-self: flex-start;
-		height: calc(100vh - 6.725rem);
+		height: 100vh;
 		max-height: 40rem;
 		.grid-wrapper {
 			height: 100%;
 		}
 		.main {
 			height: calc(100vh - 6.725rem);
-			padding: 0;
 			flex-grow: 1;
 			h1{
 				width: 70%;
@@ -85,9 +84,6 @@
 			}
 		}
 		.img-container {
-			display: none;
-			position: absolute;
-			width: 0;
 			img {
 				display: none;
 				max-width: 0;

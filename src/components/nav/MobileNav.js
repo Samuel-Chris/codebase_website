@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import HamburgerMenu from 'react-hamburger-menu'
 import Button from '../button/Button'
 import codebaseLogo from '../../assets/images/codebase_logo_white.svg'
+import './nav-styles.scss'
 
 export default class MobileNav extends Component {
     constructor(props){

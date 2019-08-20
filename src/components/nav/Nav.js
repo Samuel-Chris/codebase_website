@@ -1,4 +1,5 @@
 import React from 'react'
+import './nav-styles.scss'
 import codebaseLogo from '../../assets/images/codebase_logo.svg'
 
 
