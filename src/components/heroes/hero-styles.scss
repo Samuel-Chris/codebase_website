@@ -53,10 +53,40 @@
 		}
 	}
 	@include breakpoint(600px) {
+		justify-content: flex-start;
+		align-self: flex-start;
+		height: calc(100vh - 6.725rem);
+		max-height: 40rem;
+		position: relative;
+		.grid-wrapper {
+			height: 100%;
+		}
+		.main {
+			height: 100%;
+			padding: 0;
+			flex-grow: 1;
+			h1{
+				width: 70%;
+				min-width: 17.5rem;
+			}
+			p {
+				// min-height: 70vh;
+				margin: 3rem 0 auto;
+				width: 90%;
+				flex-basis: 80%;
+			}
+			button {
+				position: absolute;
+				bottom: 1rem;
+			}
+		}
 		.img-container {
 			display: none;
+			position: absolute;
+			flex-grow: 0;
 			img {
 				display: none;
+				position: absolute;
 			}
 		}
 	}
@@ -119,13 +149,14 @@
 	}
 	@include breakpoint(980px) {
 		dd {
-			width: 90%;
+			width: 100%;
+			font-size: 1rem;
 		}
 		p {
-			width: 90%;
+			width: 100%;
 		}
 		dt {
-			width: 90%;
+			width: 100%;
 		}
 		.grid-wrapper {
 			display: flex;

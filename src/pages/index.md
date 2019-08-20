@@ -15,7 +15,7 @@ section1:
    heading: We help non-technical founders build technical things
    description: >-
     We are a cross-platform development agency that wants to grow your idea into a huge success.
-   image: /img/hero_icon_1.svg
+   image: /img/placeholder360.png
 
 section2:
   heading:
@@ -37,7 +37,7 @@ section2:
 
 section3:
   heading:
-    image: /img/hero_icon_3.svg
+    image: /img/placeholder360.png
     subheading: How are we different?  
     heading: Develop Once, Deploy Everywhere
     description: >
@@ -56,7 +56,7 @@ section3:
 section4:
   subheading: How much will my project cost?
   heading: Download the Cost Calculator
-  image: /img/hero_icon_3.svg
+  image: /img/placeholder394x707.png
   description: >
     Not only will you be able to test out performance a Flutter app is, but you will be able to compare our development costs to native development.
  

@@ -32,7 +32,7 @@ export class IndexPageTemplate extends React.Component {
 
     render() {
         const siteTitle = "Codebase - Flutter Cross-Development Studio";
-        const {image, title, subtitle, subheading, metaDescription, metaTitle, section1, section2, section3, section4, section5} = this.props;
+        const {section1, section2, section3, section4, section5} = this.props;
         return (
             <Layout>
                 <Helmet title={siteTitle} />

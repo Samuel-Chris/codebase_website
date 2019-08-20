@@ -9,7 +9,7 @@ export default function Hero1(props) {
     return (
         <div className="hero hero1">
            <div className="grid-wrapper">
-                <div className="col-7">
+                <div className="col-7 main">
                     <Fade left>
                         <h1 className="lead">{heading}</h1>
                         <p>{description}</p>
