@@ -6,7 +6,7 @@ import './hero-styles.scss'
 
 export default function Hero3(props) {
     const {heading, blurbs} = props.content;
-    console.log(heading);
+  
     return (
         <div className="hero hero3">
             <div className="grid-wrapper">
