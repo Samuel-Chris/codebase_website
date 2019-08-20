@@ -1,5 +1,6 @@
 import React from 'react'
 import Fade from 'react-reveal/Fade'
+import Zoom from 'react-reveal/zoom'
 import Button from '../button/Button'
 import './hero-styles.scss'
 
@@ -19,15 +20,17 @@ export default function Hero2({isMobile, content}) {
 
                 {blurbs.map(item => {
                     return (
-                        <Fade bottom duration={500}>
-                            <div className="col-4 hero2-item">
-                                <span className="image icon">
-                                    <img src={item.image.publicURL} alt="Icon"/>
+                        <div className="col-4 hero2-item">
+                            <Zoom>
+                               <span className="image icon">
+                                    <img src={item.image.publicURL} alt={item.heading}/>
                                 </span>
-                            <h3 className="lead">{item.heading}</h3>
-                            <p>{item.text}</p>
-                        </div>
-                    </Fade>    
+                            </Zoom>
+                            <Fade bottom>
+                                <h3 className="lead">{item.heading}</h3>
+                                <p>{item.text}</p>
+                            </Fade>  
+                        </div>  
                     )
                 })}
 
