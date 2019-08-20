@@ -1,6 +1,6 @@
 import React from 'react'
 import Fade from 'react-reveal/Fade'
-import Zoom from 'react-reveal/zoom'
+import Zoom from 'react-reveal/Zoom'
 import Button from '../button/Button'
 import './hero-styles.scss'
 
