@@ -18,9 +18,9 @@ export default function Hero2({content}) {
                     <h1 className="lead">{heading.heading}</h1>
                 </div>
 
-                {blurbs.map(item => {
+                {blurbs.map((item, index) => {
                     return (
-                        <div className="col-4 hero2-item">
+                        <div key={index} className="col-4 hero2-item">
                             <Zoom>
                                <span className="image icon">
                                     <img src={item.image.publicURL} alt={item.heading}/>
