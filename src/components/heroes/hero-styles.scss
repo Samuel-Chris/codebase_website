@@ -76,9 +76,9 @@
 				flex-basis: 80%;
 			}
 			button {
-				margin-top: 30vh;
+				margin-top: 15vh;
 				@include breakpoint(370px){
-					margin-top: 7vh;
+					margin-top: 10vh;
 				}
 			}
 		}
