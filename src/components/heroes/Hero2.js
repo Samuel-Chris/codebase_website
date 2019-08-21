@@ -1,6 +1,4 @@
 import React from 'react'
-import Bounce from 'react-reveal/Bounce'
-// import Fade from 'react-reveal/Fade'
 import ScrollAnimation from 'react-animate-on-scroll'
 import "animate.css/animate.min.css"
 import Button from '../button/Button'
@@ -35,7 +33,7 @@ export default function Hero2({content}) {
                 })}
 
                 <div className="col-12">
-                    <Bounce><Button>See Our Prices</Button></Bounce>
+                    <Button>See Our Prices</Button>
                 </div>
             </div>
         </div>
