@@ -6,6 +6,7 @@
   "dependencies": {
     "@emotion/core": "^10.0.16",
     "@emotion/styled": "^10.0.15",
+    "animate.css": "^3.7.2",
     "gatsby": "^2.2.9",
     "gatsby-image": "^2.2.8",
     "gatsby-plugin-emotion": "^4.1.2",
@@ -30,6 +31,7 @@
     "netlify-cms-media-library-uploadcare": "^0.5.3",
     "node-sass": "^4.11.0",
     "react": "^16.8.5",
+    "react-animate-on-scroll": "^2.1.5",
     "react-dom": "^16.8.5",
     "react-hamburger-menu": "^1.1.1",
     "react-helmet": "^5.2.0",
