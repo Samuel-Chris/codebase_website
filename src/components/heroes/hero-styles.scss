@@ -78,7 +78,7 @@
 			button {
 				margin-top: 30vh;
 				@include breakpoint(370px){
-					margin-top: 10vh;
+					margin-top: 7vh;
 				}
 			}
 		}
@@ -110,6 +110,7 @@
 		margin: 0 auto;
 	}
 	@include breakpoint(600px){
+		padding-top: 2rem;
 		h3, p {
 			width: 100%;
 		}
