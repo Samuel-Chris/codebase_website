@@ -1,4 +1,5 @@
 import React from 'react'
+import './footer-styles.scss'
 import InstagramLogo from '../../assets/images/instagram.svg'
 import MediumLogo from '../../assets/images/medium.svg'
 import LinkedinLogo from '../../assets/images/linkedin.svg'

@@ -24,6 +24,10 @@ export default function Button(props) {
         &:hover{
             box-shadow: none;
         }
+        &:active{
+            border: ${props.color ? `2px solid #FFFFFF` : `2px solid #693FAD`};
+            color: ${props.color ? `#FFFFFF`: '#693FAD'}
+        }
     `
 
     return (
