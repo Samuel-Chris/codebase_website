@@ -30,6 +30,9 @@
         margin-left: 2rem;
         p {
             flex-basis: 40%;
+            min-height: 37px;
+            display: flex;
+            align-items: center;
         }
 	}
 	@include breakpoint(980px) {

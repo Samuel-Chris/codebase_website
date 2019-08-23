@@ -28,9 +28,9 @@
 		background: _palette(bg);
 		overflow-x: hidden;
 		padding-top: 0 !important;
-		@include breakpoint(980px) {
-			padding-top: 3.725rem; 
-		}
+		// @include breakpoint(980px) {
+		// 	padding-top: 3.725rem; 
+		// }
 		.body.is-loading {
 			display: none;
 			*, *:before, *:after {
@@ -52,7 +52,7 @@
 		@include vendor('transition', ('color #{_duration(transition)} ease-in-out', 'border-color #{_duration(transition)} ease-in-out'));
 		color: inherit;
 		text-decoration: none;
-
+		font-size: 13pt;
 		&:hover {
 			color: _palette(accent3);
 		}
@@ -870,7 +870,7 @@
 		color: _palette(dark, fg);
 
 		a {
-			border-bottom-color: transparentize(_palette(dark, fg), 0.25);
+			// border-bottom-color: transparentize(_palette(dark, fg), 0.25);
 
 			&:hover {
 				color: _palette(dark, fg-bold);
@@ -1082,7 +1082,7 @@
 		/* Basic */
 
 			body, input, select, textarea {
-				font-size: 14pt;
+				font-size: 13pt;
 			}
 
 		/* Header */
