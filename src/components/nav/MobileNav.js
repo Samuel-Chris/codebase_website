@@ -30,7 +30,7 @@ export default class MobileNav extends Component {
             <div>
                 <nav className="mobile-nav">
                     <div className="main">
-                        <img src={codebaseLogo} alt="codebase logo" />
+                        <Link to="/"><img src={codebaseLogo} alt="codebase logo"/></Link>
                         <HamburgerMenu isOpen={this.state.isOpen} menuClicked={this.handleClick.bind(this)} strokeWidth={3} width={28} height={20} borderRadius={2} color="white"/>
                     </div>
 

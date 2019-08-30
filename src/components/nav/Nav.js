@@ -51,7 +51,7 @@ class Nav extends React.Component {
            <div>
             <nav className={this.state.scrolled ? 'colored' : 'none'}>
                 <div className="inner nav">
-                    <img className="image logo" src={codebaseLogo} alt="Codebase logo"/>
+                    <Link to="/"><img className="image logo" src={codebaseLogo} alt="Codebase logo"/></Link>
                     <ul>
                         <li><a href="#">Why Choose Us</a></li>
                         <li><Link to="/pricing">Pricing</Link></li>
