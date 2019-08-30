@@ -63,6 +63,9 @@ p {
         justify-content: center;
         // justify-self: center;
     }
+    .lead {
+        margin-bottom: 3rem;
+    }
     p {
         width: 80%;
         @include breakpoint(981px) {

@@ -30,7 +30,7 @@ export const ContactFormEnhanced = withFormik({
             name: '',
             email: '',
             comments: '',
-            option: 'option2'
+            option: 'Select an option'
         }
     },
   
