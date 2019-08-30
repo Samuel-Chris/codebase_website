@@ -90,6 +90,10 @@ nav.mobile-nav {
 				font-size: 1.875rem;
 				color: #FFFFFF;
 			}
+			h3 a {
+				font-size: 1.875rem;
+				font-weight: normal;
+			}
 			&::after {
 				content: '';
 				height: 2px;
