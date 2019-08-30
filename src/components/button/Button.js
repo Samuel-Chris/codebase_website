@@ -6,10 +6,11 @@ import { css } from '@emotion/core'
 export default function Button(props) {
     const buttonColor = props.color ? props.color : "#693FAD";
     const color = props.color ? "#693FAD" : "#ffffff";
+    const width = props.width ? props.width : "3.75rem";
 
     const Button = styled.button`
         padding: 0 3rem;
-        min-width: 3.75rem;
+        min-width: ${width};
         background-color: ${buttonColor};
         border: 2px solid #693FAD;
         border-radius: 5rem;

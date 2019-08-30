@@ -1,0 +1,126 @@
+@mixin breakpoint($breakpoint){
+	@media screen and (max-width: $breakpoint) {
+		@content
+	}
+}
+
+@mixin img-container {
+    display: flex;
+    justify-content: flex-end;
+    height: auto;
+}
+
+@mixin img {
+    border-radius: 3rem;
+    max-width: 90%;
+    align-self: flex-start;
+}
+
+@include breakpoint(981px){
+    .col-sm-12 {
+        grid-column: span 12;
+    }
+}
+
+p {
+    line-height: 27px;
+}
+
+
+.hero {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 4rem;
+	@include breakpoint(600px){
+		padding: 4rem 2rem;
+	}
+}
+
+.contact-section1 {
+    text-align: center;
+    margin-bottom: 4rem;
+    h1 {
+        margin-bottom: 3rem;
+    }
+    p {
+        width: 60%;
+        margin: 0 auto;
+        @include breakpoint(981px) {
+            width: 100%;
+        }
+    }
+    @include breakpoint(981px) {
+        padding-top: 0 !important;
+        margin-bottom: 0;
+    }
+}
+
+.contact-section2 {
+    .text {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        // justify-self: center;
+    }
+    p {
+        width: 80%;
+        @include breakpoint(981px) {
+            width: 100%;
+            margin-bottom: 2rem;
+        }
+    }
+}
+
+form {
+    input, select, textarea {
+        margin-bottom: 1.25rem;
+        // border-radius: 5px;
+    }
+    label {
+        margin-bottom: 0.625rem;
+        font-weight: 500;
+        font-size: 1.125rem;
+    }
+    button {
+        margin-top: 2rem;
+        min-width: 14.6875rem;
+    }
+    input:active {
+        border: 1px solid #7336FF;
+    }
+    input.input, select.input {
+        height: 4rem;
+    }
+}
+
+input.input {
+    border-radius: 5px;
+    &:active {
+        border: 1px solid #7336FF;
+    }
+    &:focus {
+        border: 1px solid #7336FF;
+    }
+}
+
+select.input, textarea.input {
+    border-radius: 5px;
+    &:active {
+        border: 1px solid #7336FF;
+    }
+    &:focus {
+        border: 1px solid #7336FF;
+    }
+}
+
+select::after {
+    content: url('../../assets/images/chevron-down.svg');
+    position: absolute;
+    right: 0;
+    top: 50%;
+}
+
+select>option {
+    padding: 1rem;
+}

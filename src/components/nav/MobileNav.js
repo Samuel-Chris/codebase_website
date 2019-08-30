@@ -3,6 +3,7 @@ import HamburgerMenu from 'react-hamburger-menu'
 import Button from '../button/Button'
 import codebaseLogo from '../../assets/images/codebase_logo_white.svg'
 import './nav-styles.scss'
+import { Link } from 'gatsby'
 
 export default class MobileNav extends Component {
     constructor(props){
@@ -36,7 +37,7 @@ export default class MobileNav extends Component {
                     <div className={"hidden " + visible}>
                         <ul>
                             <li><h3><a href="#">Why Choose Us</a></h3></li>
-                            <li><h3><a href="#">Pricing</a></h3></li>
+                            <li><h3><Link to="/pricing">Pricing</Link></h3></li>
                             <li><h3><a href="#">Process</a></h3></li>
                         </ul>
                         <p className="blog">Blog</p>

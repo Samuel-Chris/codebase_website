@@ -1,6 +1,7 @@
 import React from 'react'
 import './nav-styles.scss'
 import codebaseLogo from '../../assets/images/codebase_logo.svg'
+import { Link } from 'gatsby'
 
 
 class Nav extends React.Component {
@@ -53,12 +54,12 @@ class Nav extends React.Component {
                     <img className="image logo" src={codebaseLogo} alt="Codebase logo"/>
                     <ul>
                         <li><a href="#">Why Choose Us</a></li>
-                        <li><a href="#">Pricing</a></li>
+                        <li><Link to="/pricing">Pricing</Link></li>
                         <li><a href="#">Process</a></li>
                         <li><a href="#">Blog</a></li>
                     </ul>
                     <h3>
-                        <a href="#">Let's Chat</a>
+                        <Link to="/contact">Let's Chat</Link>
                     </h3>
                 </div>
             </nav>
