@@ -8,8 +8,6 @@ import Hero3 from '../components/heroes/Hero3'
 import Hero4 from '../components/heroes/Hero4'
 import Hero4Mobile from '../components/heroes/Hero4Mobile'
 import Hero5 from '../components/heroes/Hero5'
-import Section1 from '../components/contact-page/Section1'
-import Section2 from '../components/contact-page/Section2'
 
 
 export class IndexPageTemplate extends React.Component {
@@ -37,8 +35,6 @@ export class IndexPageTemplate extends React.Component {
         return (
             <Layout>
                 <Helmet title={siteTitle} />
-                <Section1 />
-                <Section2 />
                 <Hero1 content={section1}/>
                 <Hero2 isMobile={this.state.isMobile} content={section2}/>
                 <Hero3 content={section3}/>
