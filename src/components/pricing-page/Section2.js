@@ -1,6 +1,5 @@
 import React from 'react'
 import './styles.scss'
-import Placeholder360 from '../../../static/img/Placeholder360.png'
 
 export default function Section2() {
     return (
