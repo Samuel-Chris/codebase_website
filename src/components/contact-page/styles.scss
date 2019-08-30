@@ -42,6 +42,9 @@ p {
     margin-bottom: 4rem;
     h1 {
         margin-bottom: 3rem;
+        @include breakpoint(981px) {
+            margin-bottom: 1rem;
+        }
     }
     p {
         width: 60%;
