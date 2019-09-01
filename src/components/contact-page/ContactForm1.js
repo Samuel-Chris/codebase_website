@@ -1,6 +1,5 @@
 import React, { Component } from 'react'
 import { withFormik, Form, Field } from 'formik';
-import Button from '../button/Button'
 import './styles.scss'
 
 export const ContactForm = ({values, handleChange}) => {
