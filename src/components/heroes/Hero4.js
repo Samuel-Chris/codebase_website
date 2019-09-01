@@ -12,7 +12,7 @@ export default function Hero4(props) {
                 <div className="col-6 main">
                     <p>{subheading}</p>
                     <h1>{heading}</h1>
-                    <p>{description}</p>   
+                    <p className="desc">{description}</p>   
                     <div className="btns">
                         <Button color="#ffffff" small>Button</Button>
                         <Button color="#ffffff" small>Button</Button>

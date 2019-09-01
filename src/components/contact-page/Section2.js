@@ -1,15 +1,17 @@
 import React from 'react'
 import './styles.scss'
-import { ContactFormEnhanced } from './ContactForm'
+import { ContactFormEnhanced } from './ContactForm1'
+import { MyEnhancedForm } from './ContactForm2'
 
-export default function Section2() {
+export default function Section2(props) {
+    const {heading, subheading, text} = props.content;
     return (
         <div className="hero contact-section2">
             <div className="grid-wrapper">
                 <div className="text col-6 col-sm-12">
-                    <p class="lead">Let’s Chat!</p>
-                    <h1 className="lead">Contact Us</h1>
-                    <p>Download our cost calculator app! Not only will you be able to test out performance a Flutter app is, but you will be able to compare our development costs compared to native development.</p>
+                    <p class="lead">{subheading}</p>
+                    <h1 className="lead">{heading}</h1>
+                    <p>{text}</p>
                 </div>
 
                 <div className="col-6 col-sm-12">

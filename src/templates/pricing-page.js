@@ -28,14 +28,11 @@ export class PricingPageTemplate extends Component {
 
     render() {
       const {section1, section2, section3, section4} = this.props;
-      console.log(section3);
-      console.log(section4);
-
 
         return (
             <Layout>
-                <Section1 />
-                <Section2 />
+                <Section1 content={section1} />
+                <Section2 content={section2} />
                 {this.state.isMobile ? <Hero4Mobile content={section3}/> : <Hero4 content={section3}/>}
                 <Hero5 content={section4}/>
             </Layout>

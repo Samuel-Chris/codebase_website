@@ -4,7 +4,6 @@
 	}
 }
 
-
 .hero {
 	display: flex;
 	align-items: center;
@@ -13,18 +12,21 @@
 	@include breakpoint(600px){
 		padding: 4rem 2rem;
 	}
+	@include breakpoint(340px){
+		padding: 4rem 1rem;
+	}
 }
 
 .hero1 {
 	min-height: calc(100vh - 6.725rem);
-	padding-top: 0;
+	padding-top: 0 !important;
 	position: relative;
 	.main {
 		padding: 0;
 	}
 	p {
 		margin: 3rem 0;
-		width: 70%;
+		width: 80%;
 	}
 	.img-container {
 		display: flex;
@@ -51,7 +53,7 @@
 				img {
 					max-width: 90%;
 					margin-top: 5rem;
-					max-width: 22.5rem;
+					// max-width: 22.5rem;
 				}
 			}
 		}
@@ -162,7 +164,7 @@
 			width: 100%;
 		}
 		dt {
-			width: 100%;
+			// width: 100%;
 		}
 		.grid-wrapper {
 			display: flex;
@@ -185,9 +187,12 @@
 	min-height: 20vh;
 	max-height: 35rem;
 	flex-direction: column;
+	p.desc  {
+		width: 80%;
+	}
 	.main {
 		width: 100%;
-		min-width: 24rem;
+		// min-width: 24rem;
 		margin: 0 auto;
 		padding: 2.5rem 0;
 	}
@@ -222,14 +227,26 @@
 	flex-direction: column;
 	width: 100%;
 	padding: 0;
+	min-width: 0 !important;
+	@include breakpoint(600px) {
+		padding: 0 !important;
+	}
 	h1 {
 		color: #ffffff;
+		min-width: 0 !important;
+	}
+	p {
+		min-width: 0 !important;
 	}
 	.main {
 		background: #693FAD;
 		color: #ffffff;
 		flex-direction: column;
 		padding: 4rem 2rem; 
+		@include breakpoint(340px){
+			padding: 4rem 1rem;
+		}
+		min-width: 0;
 	}
 	img {
 		width: 70%;
@@ -275,4 +292,3 @@
 		}
 	}
 }
-

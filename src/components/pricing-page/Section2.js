@@ -1,7 +1,9 @@
 import React from 'react'
 import './styles.scss'
 
-export default function Section2() {
+export default function Section2(props) {
+    const {heading, subheading, text, image} = props.content
+
     return (
         <div className="hero pricing-section2">
             <div className="grid-wrapper">
@@ -10,9 +12,9 @@ export default function Section2() {
                 </div>
                 <div className="content-container col-6 col-sm-12 ">
                     <div className="content">
-                        <p className="lead">We want to see you succeed</p>
-                        <h1 className="lead">Tech that saves you thousands</h1>
-                        <p>We exclusively develop for with Flutter, Google’s cross-platform technology because it will save you almost half in development costs. We can develop once and create native performing apps for all the major platforms. </p>
+                        <p className="lead">{subheading}</p>
+                        <h1 className="lead">{heading}</h1>
+                        <p>{text}</p>
                     </div>
                 </div>
             </div>

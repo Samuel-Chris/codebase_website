@@ -21,7 +21,11 @@
     }
     ul.about {
         padding: 0;
-        align-items: center;
+		align-items: center;
+		justify-content: center;
+		li {
+			padding: 0 1rem;
+		}
     }
 	.social {
 		display: flex;
@@ -55,8 +59,18 @@
 		.social {
 			display: flex;
 			flex-direction: column;
+			align-items: center;
 			p {
 				align-self: center;
+			}
+		}
+		ul.follow {
+			padding: 0;
+			margin: 1rem 0 auto;
+			display: flex;
+			justify-content: center;
+			li {
+				padding: 0 1rem;
 			}
 		}
 		.grid-wrapper {

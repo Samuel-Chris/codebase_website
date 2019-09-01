@@ -10,7 +10,7 @@ class Footer extends React.Component {
             <section className="footer">
               
                 <div className="grid-wrapper">
-                    <div className="col-4">
+                    <div className="col-4 about">
                         <ul className="about">
                             <li><a href="#">About</a></li>
                             <li><a href="#">Policy</a></li>

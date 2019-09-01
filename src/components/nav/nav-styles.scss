@@ -61,7 +61,6 @@ nav.mobile-nav {
 		padding: 0 1.5rem;
 		height: 3.725rem;
 		z-index: 10;
-		border-bottom: 1px solid #EBEBEB;
 		position: relative;
 	}
 	.hidden {
@@ -127,6 +126,10 @@ nav.colored {
 	box-shadow: 5px 10px 20px rgba(0, 0, 0, 0.25);
 	height: 4rem; 
 	z-index: 10;
+}
+
+li {
+	// padding: 0 !important;
 }
 
 .dummy-nav {

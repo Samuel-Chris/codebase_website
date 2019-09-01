@@ -3,7 +3,7 @@ templateKey: pricing-page
 
 pricing-page-section1:
     heading: Pricing
-    subheading: We are a cross-platform development company that uses the 
+    subheading: Download our cost calculator app! Not only will you be able to test out performance a Flutter app is, but you will be able to compare our development costs compared to native development. 
 
 pricing-page-section2: 
     heading: Tech that saves you thousands

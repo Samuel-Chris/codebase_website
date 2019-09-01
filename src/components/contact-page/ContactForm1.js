@@ -1,14 +1,11 @@
 import React, { Component } from 'react'
-import { withFormik, Form, Field } from 'formik'
-import Select from 'react-dropdown-select'
+import { withFormik, Form, Field } from 'formik';
 import Button from '../button/Button'
 import './styles.scss'
 
 export const ContactForm = ({values, handleChange}) => {
-  const options = ["option1", "option2", "option3", "option4"];
-
     return (
-      <Form>
+      <Form name="contact" data-netlify="true" data-netlify-recaptcha="true">
           <label htmlFor="name">Name</label>
           <Field type="text" name="name" placeholder="John Doe" className="input"/>
           <label htmlFor="email">Email</label>
@@ -16,14 +13,16 @@ export const ContactForm = ({values, handleChange}) => {
           <label htmlFor="comments">Comments</label>
           <Field component="textarea" rows="5" name="comments" placeholder="Let us know how we can help." className="input"/>
           <label htmlFor="option">Where did you hear about us?</label>
-          {/* <Field component="select" name="option" placeholder="Select an option" className="input"> 
+          <div className="select">
+          <Field component="select" name="option" placeholder="Select an option" className="input"> 
             <option value="option0">Select an option</option>
             <option value="option1">option1</option>
             <option value="option2">option2</option>
             <option value="option3">option3</option>
-          </Field> */}
-          <Select options={options} onChange={handleChange} placeholder="Select an option" className="dropdown"/>
-          <Button width="14.65rem">Submit</Button>
+          </Field>
+          </div>
+          <div data-netlify-recaptcha="true" className="captcha"></div>
+          <button type="submit">Submit</button>
       </Form>
     );
   };

@@ -1395,7 +1395,7 @@
 		/* Basic */
 
 			html, body {
-				min-width: 320px;
+				// min-width: 320px;
 			}
 
 		/* Main */
@@ -1476,3 +1476,9 @@ h1.lead, h3.lead {
 	}
 }
 
+@include breakpoint(340px) {
+	button {
+		max-width: 12rem;
+		font-size: 0.75rem;
+	}
+}

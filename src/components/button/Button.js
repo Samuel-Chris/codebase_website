@@ -22,6 +22,10 @@ export default function Button(props) {
         align-items: center;
         justify-content: center;
         transition: 200ms ease-in-out;
+        @media screen and (max-width: 360px){
+            font-size: 0.85rem;
+            height: 3rem;
+        }
         &:hover{
             box-shadow: none;
         }
