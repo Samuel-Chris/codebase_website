@@ -21,7 +21,7 @@ export const ContactForm = ({values, handleChange}) => {
           </Field>
           </div>
           <div data-netlify-recaptcha="true" className="captcha"></div>
-          <button type="submit">Submit</button>
+          <button type="submit">Send</button>
       </Form>
     );
   };
