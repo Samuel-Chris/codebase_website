@@ -3,7 +3,7 @@ import './styles.scss'
 
 export default function ContactForm2() {
   return (
-    <form method="POST" name="contact-form" data-netlify="true" data-netlify-recaptcha="true" data-netlify-honeypot="bot-field">
+    <form method="POST" name="contact-form" data-netlify="true" data-netlify-honeypot="bot-field">
       <input type="hidden" name="form-name" value="contact-form" />
       <label htmlFor="name">Name</label>
         <input type="text" name="name" placeholder="John Doe" className="input"/>
@@ -20,7 +20,6 @@ export default function ContactForm2() {
           <option value="option3">option3</option>
         </select>
       </div>
-      <div data-netlify-recaptcha="true" class="captcha"></div>
       <button type="submit">Send</button>
     </form>
   )
