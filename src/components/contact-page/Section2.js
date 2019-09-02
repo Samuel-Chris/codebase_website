@@ -1,6 +1,5 @@
 import React from 'react'
 import './styles.scss'
-import { ContactFormEnhanced } from './ContactForm1'
 import ContactForm2 from './ContactForm2'
 
 export default function Section2(props) {
