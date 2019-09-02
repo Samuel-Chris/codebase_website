@@ -26,10 +26,14 @@ export default class MobileNav extends Component {
     render() {
         let visible = this.state.isOpen && "visible"
 
+        let shadow = {
+            boxShadow: this.state.isOpen ? '5px 10px 20px rgba(0, 0, 0, 0.25)' : 'none' 
+        }
+
         return (
             <div>
                 <nav className="mobile-nav">
-                    <div className="main">
+                    <div className="main" style={{shadow}}>
                         <Link to="/"><img src={codebaseLogo} alt="codebase logo"/></Link>
                         <HamburgerMenu isOpen={this.state.isOpen} menuClicked={this.handleClick.bind(this)} strokeWidth={3} width={28} height={20} borderRadius={2} color="white"/>
                     </div>
@@ -41,7 +45,7 @@ export default class MobileNav extends Component {
                             <li><h3><a href="#">Process</a></h3></li>
                         </ul>
                         <p className="blog">Blog</p>
-                        <Button color="white"><Link to="/contact">LET'S CHAT!</Link></Button>
+                        <Link to="/contact"><Button color="white">LET'S CHAT!</Button></Link>
                         <p className="copyright">
                             Copyright 2019
                         </p>
