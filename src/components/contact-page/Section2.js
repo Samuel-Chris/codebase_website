@@ -1,7 +1,7 @@
 import React from 'react'
 import './styles.scss'
 import { ContactFormEnhanced } from './ContactForm1'
-import { MyEnhancedForm } from './ContactForm2'
+import ContactForm2 from './ContactForm2'
 
 export default function Section2(props) {
     const {heading, subheading, text} = props.content;
@@ -15,7 +15,7 @@ export default function Section2(props) {
                 </div>
 
                 <div className="col-6 col-sm-12">
-                    <ContactFormEnhanced />
+                    <ContactForm2 />
                 </div>
             </div>
         </div>
