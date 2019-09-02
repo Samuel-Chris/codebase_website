@@ -4,7 +4,7 @@ import './styles.scss'
 export default function ContactForm2() {
   return (
     <form method="POST" name="contact-form" data-netlify="true" data-netlify-recaptcha="true" data-netlify-honeypot="bot-field">
-      <input type="hidden" name="contact-form" value="contact" />
+      <input type="hidden" name="form-name" value="contact-form" />
       <label htmlFor="name">Name</label>
         <input type="text" name="name" placeholder="John Doe" className="input"/>
       <label htmlFor="email">Email</label>
