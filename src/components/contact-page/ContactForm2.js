@@ -3,7 +3,7 @@ import './styles.scss'
 
 export default function ContactForm2() {
   return (
-    <form name="contact-form" data-netlify="true" data-netlify-recaptcha="true">
+    <form method="POST" name="contact-form" data-netlify="true" data-netlify-recaptcha="true">
       <label htmlFor="name">Name</label>
         <input type="text" name="name" placeholder="John Doe" className="input"/>
       <label htmlFor="email">Email</label>
