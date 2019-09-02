@@ -13,15 +13,15 @@ export default function ContactForm2() {
         <textarea name="comments" rows="5" placeholder="Let us know how we can help" class="input" maxlength="500" required></textarea>
       <label htmlFor="options">Where did you hear about us?</label>
       <div className="select">
-        <select name="option" placeholder="Select an option" className="input" required>
+        <select name="Where did you hear about us" placeholder="Select an option" className="input" required>
           <option value="" disabled selected hidden>Select an option</option>
-          <option value="option1">Youtube</option>
-          <option value="option2">Instagram</option>
-          <option value="option3">Discord</option>
-          <option value="option4">LinkedIn</option>
-          <option value="option5">Clutch.co</option>
-          <option value="option6">Word of Mouth</option>
-          <option value="option7">Other</option>
+          <option value="Youtube">Youtube</option>
+          <option value="Instagram">Instagram</option>
+          <option value="Discord">Discord</option>
+          <option value="LinkedIn">LinkedIn</option>
+          <option value="Clutch.co">Clutch.co</option>
+          <option value="Word of Mouth">Word of Mouth</option>
+          <option value="Other">Other</option>
         </select>
       </div>
       <button type="submit">Submit</button>
