@@ -49,7 +49,7 @@ export class BlogPageTemplate extends Component {
                     )}
                    <div className="pagination-numbers">
                     {Array.from({ length: numPages }, (_, i) => (
-                      <Link key={`pagination-number${i + 1}`} to={`/blog/${i === 0 ? "" : i + 1}`}>
+                      <Link style={{color: page == i + 1 && `#693FAD`}} key={`pagination-number${i + 1}`} to={`/blog/${i === 0 ? "" : i + 1}`}>
                          {i + 1} 
                       </Link>
                     ))}
@@ -88,7 +88,7 @@ const BlogPage = ({data, pageContext}) => {
 export default BlogPage
 
  export const pageQuery = graphql`
-   query ($skip: Int!, $limit: Int!) {
+   query ($skip: Int!, $limit: Int!){
       posts:  allMarkdownRemark(sort: { fields: [frontmatter___date], order: DESC } limit: $limit skip: $skip filter: {frontmatter: {templateKey: {eq: "blog-post"}}}) {
         edges {
           node {
@@ -138,4 +138,32 @@ export default BlogPage
 //     }
 //   }
 // `
-  
+
+// query ($skip: Int!, $limit: Int!) {
+//   posts:  allMarkdownRemark(sort: { fields: [frontmatter___date], order: DESC } limit: $limit skip: $skip filter: {frontmatter: {templateKey: {eq: "blog-post"}}}) {
+//     edges {
+//       node {
+//         id
+//         html
+//         excerpt(pruneLength: 105)
+//         fields {
+//           slug
+//         }
+//         frontmatter {
+//           tags
+//           featuredimage
+//           topic
+//           title
+//         }
+//       }
+//     }
+//   } 
+
+//   currentPage: markdownRemark(frontmatter: {templateKey: {eq: "blog-page"}}) {
+//    frontmatter {
+//      blog_page_section1 {
+//        heading
+//        text
+//      }
+//    }
+//  }

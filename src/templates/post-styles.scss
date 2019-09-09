@@ -53,8 +53,12 @@
 .pagination {
     display: flex;
     justify-content: center;
+    align-items: center;
     a {
+        font-size: 2rem;
+        font-weight: bold;
         margin-right: 1rem;
+        margin-bottom: 8px;
         &:hover {
             color: #693FAD;
         }
@@ -64,7 +68,9 @@
 .pagination-numbers {
     display: inline;
     a {
+        font-size: 1rem;
         margin-right: 1rem;
+        margin-bottom: 0;
         &:hover {
             color: #693FAD;
         }

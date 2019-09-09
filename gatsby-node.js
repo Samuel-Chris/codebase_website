@@ -8,7 +8,7 @@ exports.createPages = ({ actions, graphql }) => {
 
   return graphql(`
     {
-      posts: allMarkdownRemark(limit: 1000) {
+      posts: allMarkdownRemark(limit: 1000 filter: {frontmatter: {templateKey: {ne: "blog-page"}}}) {
         edges {
           node {
             id
@@ -48,6 +48,7 @@ exports.createPages = ({ actions, graphql }) => {
     const blogPages = result.data.blog.edges;
     const postsPerPage = 4;
     const numPages = Math.ceil(blogPages.length / postsPerPage);
+    console.log(numPages);
 
     // const posts = result.data.allMarkdownRemark.edges;
     // const postsPerPage = 2
