@@ -33,7 +33,7 @@ export default class MobileNav extends Component {
         return (
             <div>
                 <nav className="mobile-nav">
-                    <div className="main" style={{shadow}}>
+                    <div className="main" style={shadow}>
                         <Link to="/"><img src={codebaseLogo} alt="codebase logo"/></Link>
                         <HamburgerMenu isOpen={this.state.isOpen} menuClicked={this.handleClick.bind(this)} strokeWidth={3} width={28} height={20} borderRadius={2} color="white"/>
                     </div>
@@ -42,9 +42,9 @@ export default class MobileNav extends Component {
                         <ul>
                             <li><h3><a href="#">Why Choose Us</a></h3></li>
                             <li><h3><Link to="/pricing">Pricing</Link></h3></li>
-                            <li><h3><a href="#">Process</a></h3></li>
+                            <li><h3><Link to="/process">Process</Link></h3></li>
                         </ul>
-                        <p className="blog">Blog</p>
+                        <p className="blog"><Link to="/blog">Blog</Link></p>
                         <Link to="/contact"><Button color="white">LET'S CHAT!</Button></Link>
                         <p className="copyright">
                             Copyright 2019

@@ -1,0 +1,80 @@
+@mixin breakpoint($breakpoint){
+	@media screen and (max-width: $breakpoint) {
+		@content
+	}
+}
+
+.post-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 0 auto 4rem;
+    grid-auto-rows: minmax(400px, auto);
+    grid-gap: 3.8125rem; 
+    @include breakpoint(750px) {
+        grid-template-columns: 1fr;
+        min-width: 0 !important;
+    }
+    @include breakpoint(600px) {
+        width: 100% !important;
+        min-width: 0 !important;
+    }
+    @include breakpoint(981px) {
+        width: 80%;
+        margin: 0 auto 4rem;
+        min-width: 42rem;
+    }
+}
+
+.posts-wrapper {
+    margin-top: 6.5rem;
+    @include breakpoint(981px) {
+        padding: 0 2rem;
+        display: flex;
+        flex-direction: column;
+        .post-container {
+            order: 1;
+        }
+        .blog-sidebar{
+            order: 3;
+        }
+        .pagination {
+            order: 2;
+            margin-bottom: 3rem;
+        }
+    }
+    @include breakpoint(750px) {
+        width: 100%;
+    }
+    @include breakpoint(350px) {
+        padding: 0 1rem;
+    }
+}
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    a {
+        margin-right: 1rem;
+        &:hover {
+            color: #693FAD;
+        }
+    }
+}
+
+.pagination-numbers {
+    display: inline;
+    a {
+        margin-right: 1rem;
+        &:hover {
+            color: #693FAD;
+        }
+    }
+} 
+
+// .post-container {
+//     @include breakpoint(750px) {
+//         width: 90% !important;
+//         max-width: 18.8125rem !important;
+//         margin: 0 auto
+//     }
+// }

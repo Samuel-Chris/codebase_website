@@ -1,6 +1,5 @@
 ---
 templateKey: index-page
-tags: none
 title: We create amazing cross-platform experiences
 subtitle: We bring your product to all major platforms for a fraction of the cost and time.
 header_image: /img/codebase_logo.png

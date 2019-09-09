@@ -1,5 +1,6 @@
 ---
 templateKey: contact-page
+path: /contact
 
 contact-page-section1:
     heading: Want to talk about your project?

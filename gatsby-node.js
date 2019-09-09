@@ -8,7 +8,22 @@ exports.createPages = ({ actions, graphql }) => {
 
   return graphql(`
     {
-      allMarkdownRemark(limit: 1000) {
+      posts: allMarkdownRemark(limit: 1000) {
+        edges {
+          node {
+            id
+            fields {
+              slug
+            }
+            frontmatter {
+              tags
+              templateKey
+            }
+          }
+        }
+      }
+
+      blog: allMarkdownRemark(limit: 1000 filter: {frontmatter: {templateKey: {eq: "blog-post"}}}) {
         edges {
           node {
             id
@@ -29,7 +44,23 @@ exports.createPages = ({ actions, graphql }) => {
       return Promise.reject(result.errors)
     }
 
-    const posts = result.data.allMarkdownRemark.edges
+    const posts = result.data.posts.edges;
+    const blogPages = result.data.blog.edges;
+    const postsPerPage = 4;
+    const numPages = Math.ceil(blogPages.length / postsPerPage);
+
+    // const posts = result.data.allMarkdownRemark.edges;
+    // const postsPerPage = 2
+    // const numPages = Math.ceil(posts.length / postsPerPage)
+    // const numPages = 0
+
+    // posts.forEach(edge => {
+    //   const templateKey = edge.node.frontmatter.templateKey;
+    //   // if (templateKey === "blog-page") {
+    //   //   numPages = numPages + 1;
+    //   // }
+    // })
+    
 
     posts.forEach(edge => {
       const id = edge.node.id
@@ -42,6 +73,19 @@ exports.createPages = ({ actions, graphql }) => {
         // additional data can be passed via context
         context: {
           id,
+        },
+      })
+    })
+
+    Array.from({ length: numPages }).forEach((_, i) => {
+      createPage({
+        path: i === 0 ? `/blog` : `/blog/${i + 1}`,
+        component: path.resolve("./src/templates/blog-page.js"),
+        context: {
+          limit: postsPerPage,
+          skip: i * postsPerPage,
+          numPages,
+          currentPage: i + 1,
         },
       })
     })

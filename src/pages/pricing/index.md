@@ -1,5 +1,6 @@
 ---
 templateKey: pricing-page
+path: /pricing
 
 pricing-page-section1:
     heading: Pricing

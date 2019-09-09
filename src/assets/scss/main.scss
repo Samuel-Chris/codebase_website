@@ -1466,15 +1466,18 @@ h1.lead, h3.lead {
 	color: #4A3E7C;
 }
 
-// .hero {
-// 	display: flex;
-// 	align-items: center;
-// 	justify-content: center;
-// 	padding: 4rem;
-// 	@include breakpoint(600px){
-// 		padding: 4rem 2rem;
-// 	}
-// }
+.hero {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 4rem;
+	@include breakpoint(600px){
+		padding: 4rem 2rem;
+	}
+	@include breakpoint(340px){
+		padding: 4rem 1rem !important;
+	}
+}
 
 @include breakpoint(340px) {
 	button {

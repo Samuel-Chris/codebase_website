@@ -39,7 +39,37 @@ module.exports = {
     },
     'gatsby-plugin-react-helmet',
     'gatsby-plugin-sass',
-    
+    // {
+    //   resolve: `gatsby-plugin-paginate`,
+    //   options: {
+    //     sources: [
+    //       {
+    //         path: `/blog`,
+    //         pageSize: 2,
+    //         template: `${__dirname}/src/templates/blog-page.js`,
+    //         serialize: (results) => results.allMarkdownRemark.edges,
+    //         query: `{
+    //           allMarkdownRemark(filter: {frontmatter: {templateKey: {eq: "blog-post"}}}) {
+    //             edges {
+    //               node {
+    //                 excerpt(pruneLength: 250)
+    //                 html
+    //                 id
+    //                 timeToRead
+    //                 frontmatter {
+    //                   date
+    //                   path
+    //                   tags
+    //                   title
+    //                 }
+    //               }
+    //             }
+    //           }
+    //         }`
+    //       }
+    //     ]
+    //   }
+    // },
     {
       resolve: 'gatsby-source-filesystem',
       options: {

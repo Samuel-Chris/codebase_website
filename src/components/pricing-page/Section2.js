@@ -8,7 +8,7 @@ export default function Section2(props) {
         <div className="hero pricing-section2">
             <div className="grid-wrapper">
                 <div className="img-container col-6 col-sm-12">
-                    <img src="http://placehold.it/360" alt="alt"/>
+                    <img src="https://placehold.it/360" alt="alt"/>
                 </div>
                 <div className="content-container col-6 col-sm-12 ">
                     <div className="content">

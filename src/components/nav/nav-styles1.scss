@@ -30,17 +30,25 @@ nav {
 		align-items: center;
 		height: 100%;
 		z-index: 10;
+		img {
+			flex-basis: auto;
+		}
 		ul {
 			list-style: none;
 			display: flex;
 			flex-direction: row;
-			flex-basis: 45%;
+			flex-basis: 35%;
 			justify-content: space-between;
+			flex-basis: 50%;
 		}
 		h3 {
 			font-weight: bold;
 			color: #693FAD;
 			margin-bottom: 0;
+			flex-basis: auto;
+			min-width: 12.375rem;
+			text-align: right;
+			justify-self: flex-end;
 		}
 	}
 }
@@ -133,3 +141,4 @@ nav.colored {
 	height: 6.725rem;
 	width: 100%;
 }
+
