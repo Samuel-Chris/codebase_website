@@ -50,19 +50,6 @@ exports.createPages = ({ actions, graphql }) => {
     const numPages = Math.ceil(blogPages.length / postsPerPage);
     console.log(numPages);
 
-    // const posts = result.data.allMarkdownRemark.edges;
-    // const postsPerPage = 2
-    // const numPages = Math.ceil(posts.length / postsPerPage)
-    // const numPages = 0
-
-    // posts.forEach(edge => {
-    //   const templateKey = edge.node.frontmatter.templateKey;
-    //   // if (templateKey === "blog-page") {
-    //   //   numPages = numPages + 1;
-    //   // }
-    // })
-    
-
     posts.forEach(edge => {
       const id = edge.node.id
       createPage({

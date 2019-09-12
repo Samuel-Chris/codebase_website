@@ -13,9 +13,10 @@
     @include breakpoint(750px) {
         grid-template-columns: 1fr;
         min-width: 0 !important;
+        max-width: 24rem !important;
     }
     @include breakpoint(600px) {
-        width: 100% !important;
+        // width: 100% !important;
         min-width: 0 !important;
     }
     @include breakpoint(981px) {

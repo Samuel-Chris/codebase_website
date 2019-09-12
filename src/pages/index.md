@@ -36,7 +36,7 @@ section2:
 
 section3:
   heading:
-    image: /img/placeholder360.png
+    image: /img/placeholder360.png 
     subheading: How are we different?  
     heading: Develop Once, Deploy Everywhere
     description: >

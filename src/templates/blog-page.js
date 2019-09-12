@@ -7,6 +7,17 @@ import Topics from '../components/blog/Topics'
 import PopularPosts from '../components/blog/PopularPosts'
 import './post-styles.scss'
 import Join from '../components/blog/Join'
+import pic1 from '../../static/img/frame_2.2.png'
+import pic2 from '../../static/img/frame_2.3.png'
+import pic3 from '../../static/img/frame_2_4.png'
+import pic4 from '../../static/img/frame_2.5.png'
+import pic5 from '../../static/img/frame_2.6.png'
+import pic6 from '../../static/img/frame_2.6.png'
+import pic7 from '../../static/img/frame_2.6.png'
+import pic8 from '../../static/img/frame_2.6.png'
+
+
+
 
 export class BlogPageTemplate extends Component {
     constructor(props){
@@ -26,12 +37,15 @@ export class BlogPageTemplate extends Component {
                <Section1 content={section1}/>
                 <div className="grid-wrapper posts-wrapper">
                  <div className="post-container col-8 col-sm-12">
-                    {content.map(post => {
-                       return (
-                          <div className="post-body">
-                            <BlogPost key={post.node.id} content={post}/>
-                          </div>
-                      )
+                     {content.map(post => {
+                        let pics = [pic1, pic2, pic3, pic4, pic5, pic6, pic7, pic8]
+
+                        return (
+                           <div className="post-body">
+                             <BlogPost key={post.node.id} content={post} img={pics[1]}/>
+                           </div>
+                          )
+
                      })}
                  </div>
 
