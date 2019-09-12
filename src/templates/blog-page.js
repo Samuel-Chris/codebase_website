@@ -7,7 +7,7 @@ import Topics from '../components/blog/Topics'
 import PopularPosts from '../components/blog/PopularPosts'
 import './post-styles.scss'
 import Join from '../components/blog/Join'
-import pic1 from '../../static/img/frame_2.2.png'
+// import pic1 from '../../static/img/frame_2.2.png'
 // import pic2 from '../../static/img/frame_2.3.png'
 // import pic3 from '../../static/img/frame_2_4.png'
 // import pic4 from '../../static/img/frame_2.5.png'
@@ -42,7 +42,7 @@ export class BlogPageTemplate extends Component {
 
                         return (
                            <div className="post-body">
-                             <BlogPost key={post.node.id} content={post} img={pic1}/>
+                             <BlogPost key={post.node.id} content={post}/>
                            </div>
                           )
 
