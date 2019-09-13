@@ -8,6 +8,7 @@ import Content, { HTMLContent } from '../components/Content'
 import Topics from '../components/blog/Topics'
 import PopularPosts from '../components/blog/PopularPosts'
 import Join from '../components/blog/Join'
+import './blog-styles.scss'
 
 export const BlogPostTemplate = ({
   content,
@@ -20,11 +21,11 @@ export const BlogPostTemplate = ({
   const PostContent = contentComponent || Content
 
   return (
-    <section className="section">
+    <section className="section blog-wrapper">
       {helmet || ''}
-      <div className="blog-content">
+      <div className="blogPage-content">
         <div className="grid-wrapper">
-          <div className="col-8">
+          <div className="col-8 blogPagepostbody">
             <h1 className="lead">
               {title}
             </h1>

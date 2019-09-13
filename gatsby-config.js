@@ -62,6 +62,12 @@ module.exports = {
         'gatsby-plugin-sass',
         `gatsby-plugin-sitemap`,
         'gatsby-plugin-offline',
+        // {
+        //   resolve:'gatsby-plugin-layout',
+        //   options: {
+        //     component: require.resolve('./src/components/layout/Layout')
+        //   }
+        // },
         {
           resolve: 'gatsby-plugin-netlify-cms',
           options: {

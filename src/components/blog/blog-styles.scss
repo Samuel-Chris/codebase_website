@@ -27,6 +27,8 @@
 .blog-post {
     width: 100%;
     height: auto;
+    // height: 500px;
+    // height: 100%;
     box-shadow: -4px 4px 20px rgba(0, 0, 0, 0.1);
     border-radius: 1.25rem;
     p.dev {
@@ -90,7 +92,7 @@
         margin-bottom: 1rem;
     }
     p {
-        margin-bottom: 0.75rem;
+        margin: 0.85rem 0 !important;
     }
 }
 
@@ -102,9 +104,11 @@
     p.topic {
         font-size: 0.625rem;
         line-height: 15px;
+        margin: 0;
     }
     p.desc {
         font-size: 1.125rem;
+        margin: 0;
         line-height: 27px;
         font-weight: bold;
     }

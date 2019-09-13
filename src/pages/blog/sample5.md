@@ -2,10 +2,9 @@
 templateKey: 'blog-post'
 title: 'This is a header with two lines of text'
 date: 2017-01-04T15:04:10.000Z
-featuredpost: true
+featuredimage: /img/Frame5.png
 description: >-
-  We’re proud to announce that we’ll be offering a small batch of Jamaica Blue
-  Mountain coffee beans in our store next week.
+  Download our cost calculator app! Not only will you be able to test out performance a Flutter app is, but you will be able to compare our development costs compared to native development.
 tags:
   - jamaica
   - green beans
@@ -14,7 +13,7 @@ tags:
 topic: sometopic
 ---
 
-### Tech that saves you thousands
+## Tech that saves you thousands
 
 Download our cost calculator app! Not only will you be able to test out performance a Flutter app is, but you will be able to compare our development costs compared to native development.
 
@@ -22,7 +21,7 @@ Download our cost calculator app! Not only will you be able to test out performa
 
 Download our cost calculator app! Not only will you be able to test out performance a Flutter app is, but you will be able to compare our development costs compared to native development.
 
-![chemex](/img/chemex.jpg)
+![placeholder](/img/placeholder1200.png)
 
 ## Tech that saves you thousands
 
@@ -33,7 +32,7 @@ Download our cost calculator app! Not only will you be able to test out performa
 
 Download our cost calculator app! Not only will you be able to test out performance a Flutter app is, but you will be able to compare our development costs compared to native development.
 
-![chemex](/img/chemex.jpg)
+![placeholder](/img/placeholder1200.png)
 
 ## Tech that saves you thousandsTech that saves you thousands
 

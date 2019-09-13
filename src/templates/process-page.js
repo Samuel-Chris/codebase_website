@@ -75,31 +75,41 @@ export const pageQuery = graphql`
           }
           process_section3 {
             heading
-            image
+            image {
+              publicURL
+            }
             subheading
             text
           }
           process_section4 {
             text
             subheading
-            image
+            image {
+              publicURL
+            }
             heading
           }
           process_section5 {
-            image
+            image {
+              publicURL
+            }
             heading
             subheading
             text
           }
           process_section6 {
             heading
-            image
+            image {
+              publicURL
+            }
             subheading
             text
           }
           process_section7 {
             heading
-            image
+            image {
+              publicURL
+            }
             subheading
             text
           }

@@ -8,16 +8,16 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     margin: 0 auto 4rem;
-    grid-auto-rows: minmax(400px, auto);
+    grid-auto-rows: minmax(500px, 550px);
     grid-gap: 3.8125rem; 
     @include breakpoint(750px) {
         grid-template-columns: 1fr;
         min-width: 0 !important;
-        max-width: 24rem !important;
+        max-width: 24rem;
     }
     @include breakpoint(600px) {
-        // width: 100% !important;
-        min-width: 0 !important;
+        width: 100% !important;
+        min-width: 0;
     }
     @include breakpoint(981px) {
         width: 80%;
@@ -76,12 +76,5 @@
             color: #693FAD;
         }
     }
-} 
+}
 
-// .post-container {
-//     @include breakpoint(750px) {
-//         width: 90% !important;
-//         max-width: 18.8125rem !important;
-//         margin: 0 auto
-//     }
-// }

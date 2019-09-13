@@ -38,11 +38,10 @@ export class BlogPageTemplate extends Component {
                 <div className="grid-wrapper posts-wrapper">
                  <div className="post-container col-8 col-sm-12">
                      {content.map(post => {
-                        // let pics = [pic1, pic2, pic3, pic4, pic5, pic6, pic7, pic8]
-
+                        console.log(post.node.frontmatter.featuredimage.publicURL);
                         return (
                            <div className="post-body">
-                             <BlogPost key={post.node.id} content={post}/>
+                             <BlogPost key={post.node.id} content={post} img={post.node.frontmatter.featuredimage.childImageSharp.fluid}/>
                            </div>
                           )
 
@@ -114,7 +113,13 @@ export default BlogPage
             }
             frontmatter {
               tags
-              featuredimage
+              featuredimage{
+                childImageSharp {
+                  fluid(maxWidth: 400) {
+                    ...GatsbyImageSharpFluid
+                  }
+                }
+              }
               topic
               title
             }
