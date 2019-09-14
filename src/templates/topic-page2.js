@@ -69,12 +69,12 @@ export class BlogPageTemplate extends Component {
     }
 }
 
-const BlogPage = ({data, pageContext}) => {
+const TopicPage = ({data, pageContext}) => {
     const posts =  data.posts.edges;
     const currentPage = data.currentPage;
 
     return  (
-        <BlogPageTemplate
+        <TopicPageTemplate
             content={posts}
             section1={currentPage.frontmatter.blog_page_section1}
             context={pageContext}
@@ -86,10 +86,11 @@ const BlogPage = ({data, pageContext}) => {
       )
   }
 
-  
-export default BlogPage
 
- export const pageQuery = graphql`
+export default TopicPage
+
+
+export const pageQuery = graphql`
    query ($skip: Int!, $limit: Int!){
       posts:  allMarkdownRemark(sort: { fields: [frontmatter___date], order: DESC } limit: $limit skip: $skip filter: {frontmatter: {templateKey: {eq: "blog-post"}}}) {
         edges {

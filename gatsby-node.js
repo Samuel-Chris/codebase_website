@@ -31,7 +31,7 @@ exports.createPages = ({ actions, graphql }) => {
               slug
             }
             frontmatter {
-              tags
+              topic
               templateKey
             }
           }
@@ -48,7 +48,8 @@ exports.createPages = ({ actions, graphql }) => {
     const blogPages = result.data.blog.edges;
     const postsPerPage = 4;
     const numPages = Math.ceil(blogPages.length / postsPerPage);
-    console.log(numPages);
+
+    // const blogTopic = result.data.blog.edges.node.frontmatter.topic;
 
     posts.forEach(edge => {
       const id = edge.node.id
@@ -78,29 +79,77 @@ exports.createPages = ({ actions, graphql }) => {
       })
     })
 
-    // Tag pages:
-    let tags = []
-    // Iterate through each post, putting all found tags into `tags`
-    posts.forEach(edge => {
-      if (_.get(edge, `node.frontmatter.tags`)) {
-        tags = tags.concat(edge.node.frontmatter.tags)
-      }
-    })
-    // Eliminate duplicate tags
-    tags = _.uniq(tags)
+    // Array.from({ length: numPages }).forEach((_, i) => {
+    //   createPage({
+    //     path: i === 0 ? `/topics/` : `/blog/${i + 1}`,
+    //     component: path.resolve("./src/templates/blog-page.js"),
+    //     context: {
+    //       limit: postsPerPage,
+    //       skip: i * postsPerPage,
+    //       currentPage: i + 1,
+    //     },
+    //   })
+    // })
 
-    // Make tag pages
-    tags.forEach(tag => {
-      const tagPath = `/tags/${_.kebabCase(tag)}/`
+    // // Tag pages:
+    // let tags = []
+    // // Iterate through each post, putting all found tags into `tags`
+    // posts.forEach(edge => {
+    //   if (_.get(edge, `node.frontmatter.tags`)) {
+    //     tags = tags.concat(edge.node.frontmatter.tags)
+    //   }
+    // })
+    // // Eliminate duplicate tags
+    // tags = _.uniq(tags)
 
-      createPage({
-        path: tagPath,
-        component: path.resolve(`src/templates/tags.js`),
-        context: {
-          tag,
-        },
-      })
-    })
+    // // Make tag pages
+    // tags.forEach(tag => {
+    //   const tagPath = `/tags/${_.kebabCase(tag)}/`
+
+    //   createPage({
+    //     path: tagPath,
+    //     component: path.resolve(`src/templates/tags.js`),
+    //     context: {
+    //       tag,
+    //     },
+    //   })
+    // })
+
+    // let topics = [];
+    // console.log(topics);
+    // posts.forEach(edge => {
+    //   console.log(topics);
+    //   if (_.get(edge, `node.frontmatter.topic`)) {
+    //     console.log(topics);
+    //     topics = topics.concat(edge.node.frontmatter.topic);
+    //   }
+    //   topics = _.uniq(topics);
+    //   topics.forEach(topic => {
+    //     const topicPath = `/topics/${_.kebabCase(topic)}/`
+    //     console.log(topics);
+    //     createPage({
+    //       path: topicPath,
+    //       component: path.resolve(`src/templates/topic-page.js`),
+    //       context: {
+    //         topic,
+    //       },
+    //     })
+    //   })
+    // })
+
+    // posts.forEach(edge => {
+    //   if (edge.node.frontmatter.topic) {
+    //     const topic = edge.node.frontmatter.topic;
+    //     const topicPath = `/topics/${_.kebabCase(topic)}/`;
+    //     createPage({
+    //       path: topicPath,
+    //       component: path.resolve(`src/templates/topic-page.js`),
+    //       context: {
+    //         topic
+    //       }
+    //     })
+    //   }
+    // })
   })
 }
 
