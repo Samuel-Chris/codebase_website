@@ -1,6 +1,6 @@
 ---
 templateKey: 'blog-post'
-title: 'Small batch in store next week'
+title: 'Small batch of blue mountain in store next week'
 date: 2017-01-04T15:04:10.000Z
 featuredimage: /img/Frame3.png
 description: >-

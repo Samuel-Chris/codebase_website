@@ -11,7 +11,7 @@ export default function BlogPost(props) {
             <Img fluid={img} alt=""/>
             <div className="card-content">
                 <p className="lead dev">{post.frontmatter.topic}</p>
-                <h3 className="lead">{post.frontmatter.title}</h3>
+                <h3 className="lead title">{post.frontmatter.title}</h3>
                 <p className="text">{post.excerpt}</p>
                 <p className="lead read-more">
                     <Link to={post.fields.slug}>Read more</Link>
