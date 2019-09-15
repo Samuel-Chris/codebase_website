@@ -21,12 +21,12 @@ const TopicsPage = ({
             className="column is-10 is-offset-1"
             style={{ marginBottom: '6rem' }}
           >
-            <h1 className="title is-size-2 is-bold-light">Tags</h1>
-            <ul className="taglist">
-              {group.map(tag => (
-                <li key={tag.fieldValue}>
-                  <Link to={`/tags/${kebabCase(tag.fieldValue)}/`}>
-                    {tag.fieldValue} ({tag.totalCount})
+            <h1 className="lead">Topics</h1>
+            <ul className="topiclist">
+              {group.map(topic => (
+                <li key={topic.fieldValue}>
+                  <Link to={`/topics/${kebabCase(topic.fieldValue)}/`}>
+                    {topic.fieldValue} ({topic.totalCount})
                   </Link>
                 </li>
               ))}
@@ -41,7 +41,7 @@ const TopicsPage = ({
 export default TopicsPage
 
 export const topicPageQuery = graphql`
-  query TopicssQuery {
+  query TopicsQuery {
     site {
       siteMetadata {
         title

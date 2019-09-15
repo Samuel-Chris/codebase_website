@@ -27,17 +27,23 @@
 .blog-post {
     width: 100%;
     height: auto;
-    min-height: 520px;
+    min-height: 540px;
     // height: 100%;
     box-shadow: -4px 4px 20px rgba(0, 0, 0, 0.1);
     border-radius: 1.25rem;
+    .title-container {
+        overflow: hidden;
+    }
     p.dev {
         font-size: 1rem;
         margin-bottom: 0.2rem;
     }
     p.text {
+        display: block;
         color: #000000;
         margin-bottom: 1.8125rem;
+        flex-grow: 1;
+        max-height: 200px;
     }
     p.read-more {
         font-size: 1rem;
