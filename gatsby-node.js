@@ -87,14 +87,30 @@ exports.createPages = ({ actions, graphql }) => {
     console.log(topics)
 
     topics.forEach(topic => {
-        const topicPath = `/topics/${_.kebabCase(topic)}/`;
-        createPage({
-          path: topicPath,
-          component: path.resolve(`src/templates/topic-page.js`),
-          context: {
-            topic,
-          },
+        const topicPath = `/topics/${_.kebabCase(topic)}`;
+        Array.from({ length: numPages }).forEach((_, i) => {
+          createPage({
+            path: i === 0 ? `${topicPath}` : `${topicPath}/${i + 1}`,
+            component: path.resolve(`src/templates/topic-page.js`),
+            context: {
+              limit: postsPerPage,
+              skip: i * postsPerPage,
+              numPages,
+              currentPage: i + 1,
+              topic,
+              topicPath,
+              postsPerPage
+            },
+          })
         })
+
+        // createPage({
+        //   path: topicPath,
+        //   component: path.resolve(`src/templates/topic-page.js`),
+        //   context: {
+        //     topic,
+        //   },
+        // })
       })
   })
 }

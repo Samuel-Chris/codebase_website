@@ -10,7 +10,7 @@ tags:
   - green beans
   - flavor
   - tasting
-topic: sometopic
+topic: Marketing
 ---
 
 ## Tech that saves you thousands

@@ -8,8 +8,8 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     margin: 0 auto 4rem;
-    grid-auto-rows: minmax(500px, 550px);
-    grid-gap: 3.8125rem; 
+    grid-auto-rows: minmax(500px, auto);
+    grid-gap: 3.8125rem !important;
     @include breakpoint(750px) {
         grid-template-columns: 1fr;
         min-width: 0 !important;

@@ -11,6 +11,11 @@ import Join from '../components/blog/Join'
 export class BlogPageTemplate extends Component {
     constructor(props){
         super(props);
+        this.handleClick = this.handleClick.bind(this);
+    }
+
+    handleClick() {
+      console.log("clicked")
     }
 
     render() {
@@ -27,13 +32,11 @@ export class BlogPageTemplate extends Component {
                 <div className="grid-wrapper posts-wrapper">
                  <div className="post-container col-8 col-sm-12">
                      {content.map(post => {
-                        console.log(post.node.frontmatter.featuredimage.publicURL);
                         return (
-                           <div className="post-body">
-                             <BlogPost key={post.node.id} content={post} img={post.node.frontmatter.featuredimage.childImageSharp.fluid}/>
+                           <div key={post.node.id} className="post-body">
+                             <BlogPost content={post} img={post.node.frontmatter.featuredimage.childImageSharp.fluid}/>
                            </div>
                           )
-
                      })}
                  </div>
 
@@ -57,7 +60,7 @@ export class BlogPageTemplate extends Component {
                     ))}
                    </div>
                     {!isLast && (
-                      <Link to={nextPage} rel="next">
+                      <Link to={nextPage} rel="next" onClick={this.handleClick}>
                         →
                       </Link>
                     )}

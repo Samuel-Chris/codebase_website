@@ -1,69 +1,127 @@
-// import React from 'react'
-// import Helmet from 'react-helmet'
-// import { Link, graphql } from 'gatsby'
-// import Layout from '../components/layout/Layout'
+import React, { Component } from 'react'
+import { graphql, Link } from 'gatsby'
+import Layout from '../components/layout/Layout'
+import Section1 from '../components/blog/Section1'
+import BlogPost from '../components/blog/BlogPost'
+import Topics from '../components/blog/Topics'
+import PopularPosts from '../components/blog/PopularPosts'
+import './post-styles.scss'
+import Join from '../components/blog/Join'
 
-// class TopicRoute extends React.Component {
-//   render() {
-//     const posts = this.props.data.allMarkdownRemark.edges
-//     const postLinks = posts.map(post => (
-//       <li key={post.node.fields.slug}>
-//         <Link to={post.node.fields.slug}>
-//           <h2 className="is-size-2">{post.node.frontmatter.title}</h2>
-//         </Link>
-//       </li>
-//     ))
-//     const topic = this.props.pageContext.topic
-//     // const title = this.props.data.site.siteMetadata.title
-//     const totalCount = this.props.data.allMarkdownRemark.totalCount
-//     const topicHeader = `${totalCount} post${
-//       totalCount === 1 ? '' : 's'
-//     } tagged with “${tag}”`
+export class TopicPageTemplate extends Component {
+    constructor(props){
+        super(props);
+    }
 
-//     return (
-//       <Layout>
-//         <section className="section">
-//           <Helmet title={`${tag} | ${title}`} />
-//           <div className="container content">
-//             <div className="columns">
-//               <div
-//                 className="column is-10 is-offset-1"
-//                 style={{ marginBottom: '6rem' }}
-//               >
-//                 <h3 className="title is-size-4 is-bold-light">{tagHeader}</h3>
-//                 <ul className="taglist">{postLinks}</ul>
-//                 <p>
-//                   <Link to="/topics/">Browse all tags</Link>
-//                 </p>
-//               </div>
-//             </div>
-//           </div>
-//         </section>
-//       </Layout>
-//     )
-//   }
-// }
+    render() {
+        const { currentPage: page, topicPath} = this.props.context
+        const numPages = Math.ceil(this.props.content.length / this.props.context.postsPerPage);
+        const isFirst = page === 1
+        const isLast = page === numPages
+        const prevPage = page - 1 === 1 ? "${topicPath}" : `${topicPath}/${(page - 1).toString()}`
+        const nextPage = `/blog/${(page + 1).toString()}`
+        const {section1, content} = this.props
+        return (
+           <Layout>
+                <div className="grid-wrapper posts-wrapper">
+                 <div className="post-container col-8 col-sm-12">
+                     {content.map(post => {
+                        console.log(post.node.frontmatter.featuredimage.publicURL);
+                        return (
+                           <div className="post-body">
+                             <BlogPost key={post.node.id} content={post} img={post.node.frontmatter.featuredimage.childImageSharp.fluid}/>
+                           </div>
+                          )
 
-// export default TopicRoute
+                     })}
+                 </div>
 
-// export const topicPageQuery = graphql`
-//   query TopicsPage($topic: String) {
-//     allMarkdownRemark(
-//       limit: 1000
-//       sort: { fields: [frontmatter___date], order: DESC }
-//       filter: { frontmatter: { topic: { in: [$topic] } } }
-//     ) {
-//       totalCount
-//       edges {
-//         node {
-//           fields {
-//             slug
-//           }
-//           frontmatter {
-//             title
-//           }
-//         }
-//       }
-//     }
-//   }
-// `
+                 <div className="col-4 col-sm-12 blog-sidebar">
+                     <Join />
+                     <Topics />
+                     <PopularPosts />
+                 </div>
+
+                 <div className="pagination col-12">
+                    {!isFirst && (
+                    <Link to={prevPage} rel="prev">
+                      ←
+                    </Link>
+                    )}
+                   <div className="pagination-numbers">
+                    {Array.from({ length: numPages }, (_, i) => (
+                      <Link style={{color: page == i + 1 && `#693FAD`}} key={`pagination-number${i + 1}`} to={`/blog/${i === 0 ? "" : i + 1}`}>
+                         {i + 1} 
+                      </Link>
+                    ))}
+                   </div>
+                    {!isLast && (
+                      <Link to={nextPage} rel="next">
+                        →
+                      </Link>
+                    )}
+                  </div>
+        
+                </div>
+           </Layout>
+        )
+    }
+}
+
+const TopicPage = ({data, pageContext}) => {
+    const posts =  data.posts.edges;
+    const currentPage = data.currentPage;
+
+    return  (
+        <TopicPageTemplate
+            content={posts}
+            section1={currentPage.frontmatter.blog_page_section1}
+            context={pageContext}
+            // featuredImage={featuredImage}
+            // excerpt={excerpt}
+            // topic={topic}
+            // link={path}
+        />
+      )
+  }
+
+
+export default TopicPage
+
+
+export const pageQuery = graphql`
+   query ($skip: Int!, $limit: Int!, $topic: String!){
+      posts:  allMarkdownRemark(sort: { fields: [frontmatter___date], order: DESC } limit: $limit skip: $skip filter: {frontmatter: {templateKey: {eq: "blog-post"}, topic: {eq: $topic}}}) {
+        edges {
+          node {
+            id
+            html
+            excerpt(pruneLength: 105)
+            fields {
+              slug
+            }
+            frontmatter {
+              tags
+              featuredimage{
+                childImageSharp {
+                  fluid(maxWidth: 400) {
+                    ...GatsbyImageSharpFluid
+                  }
+                }
+              }
+              topic
+              title
+            }
+          }
+        }
+      } 
+   
+      currentPage: markdownRemark(frontmatter: {templateKey: {eq: "blog-page"}}) {
+       frontmatter {
+         blog_page_section1 {
+           heading
+           text
+         }
+       }
+     }
+   }`
