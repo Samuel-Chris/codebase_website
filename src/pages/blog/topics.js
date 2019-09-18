@@ -13,8 +13,8 @@ const TopicsPage = ({
   },
 }) => (
   <Layout>
-    <section className="section">
-      <Helmet title={`Tags | ${title}`} />
+    <section className="section hero">
+      <Helmet title={`Topics | ${title}`} />
       <div className="container content">
         <div className="columns">
           <div

@@ -23,7 +23,13 @@ export class TopicPageTemplate extends Component {
         const {section1, content} = this.props
         return (
            <Layout>
+
+                <div className="post-topic hero">
+                  <h1 className="lead">{this.props.context.topic}</h1>
+                </div>
+
                 <div className="grid-wrapper posts-wrapper">
+
                  <div className="post-container col-8 col-sm-12">
                      {content.map(post => {
                         console.log(post.node.frontmatter.featuredimage.publicURL);

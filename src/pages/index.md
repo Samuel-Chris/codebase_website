@@ -14,7 +14,7 @@ section1:
    heading: We help non-technical founders build technical things
    description: >-
     We are a cross-platform development agency that wants to grow your idea into a huge success.
-   image: /img/placeholder360.png
+   image: /img/following_the_idea.png
 
 section2:
   heading:
@@ -36,7 +36,7 @@ section2:
 
 section3:
   heading:
-    image: /img/placeholder360.png 
+    image: /img/network_2.png 
     subheading: How are we different?  
     heading: Develop Once, Deploy Everywhere
     description: >

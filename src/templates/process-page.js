@@ -76,7 +76,11 @@ export const pageQuery = graphql`
           process_section3 {
             heading
             image {
-              publicURL
+              childImageSharp {
+                fluid(maxWidth: 400) {
+                  ...GatsbyImageSharpFluid
+                }
+              }
             }
             subheading
             text
@@ -85,13 +89,21 @@ export const pageQuery = graphql`
             text
             subheading
             image {
-              publicURL
+              childImageSharp {
+                fluid(maxWidth: 400) {
+                  ...GatsbyImageSharpFluid
+                }
+              }
             }
             heading
           }
           process_section5 {
             image {
-              publicURL
+              childImageSharp {
+                fluid(maxWidth: 400) {
+                  ...GatsbyImageSharpFluid
+                }
+              }
             }
             heading
             subheading
@@ -100,7 +112,11 @@ export const pageQuery = graphql`
           process_section6 {
             heading
             image {
-              publicURL
+              childImageSharp {
+                fluid(maxWidth: 400) {
+                  ...GatsbyImageSharpFluid
+                }
+              }
             }
             subheading
             text
@@ -108,7 +124,11 @@ export const pageQuery = graphql`
           process_section7 {
             heading
             image {
-              publicURL
+              childImageSharp {
+                fluid(maxWidth: 400) {
+                  ...GatsbyImageSharpFluid
+                }
+              }
             }
             subheading
             text

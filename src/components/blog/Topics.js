@@ -5,7 +5,7 @@ import './blog-styles.scss'
 export default function Topics() {
     return (
         <div className="topic-container">
-            <h3><Link to="/topics">Topics</Link></h3>
+            <h3><Link to="blog/topics">Topics</Link></h3>
             <p><Link to="/topics/development">Development</Link></p>
             <p><Link to="/topics/team-building">Team Building</Link></p>
             <p><Link to="/topics/marketing">Marketing</Link></p>

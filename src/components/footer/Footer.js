@@ -28,7 +28,7 @@ class Footer extends React.Component {
                         <ul className="follow">
                             <li><a href="#" className="icon"><object data={InstagramLogo} type="image/svg+xml">Instagram</object></a></li>
                             <li><a href="#" className="icon"><object data={LinkedinLogo} type="image/svg+xml">Linkedin</object></a></li>
-                            <li><a href="#" className="icon"><img src={MediumLogo} alt="Medium"/></a></li>
+                            <li><a href="https://medium.com/@codebase.studio" target="_blank" className="icon"><img src={MediumLogo} alt="Medium"/></a></li>
                         </ul>
                     </div>
                 </div>

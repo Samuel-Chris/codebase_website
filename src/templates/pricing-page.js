@@ -89,6 +89,13 @@ export const pageQuery = graphql`
         heading
         subheading
         text
+        image {
+          childImageSharp {
+            fluid(maxWidth: 400) {
+              ...GatsbyImageSharpFluid
+            }
+          }
+        }
       }
      }
     }

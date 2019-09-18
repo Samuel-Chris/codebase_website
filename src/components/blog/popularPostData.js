@@ -7,6 +7,9 @@ const postData = () => {
       allMarkdownRemark(limit: 1000, filter: {frontmatter: {popularpost: {eq: true}}}) {
           edges {
             node {
+              fields {
+                slug
+              }
               frontmatter {
                 topic
                 title

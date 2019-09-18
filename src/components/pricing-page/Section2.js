@@ -1,4 +1,5 @@
 import React from 'react'
+import Img from 'gatsby-image'
 import './styles.scss'
 
 export default function Section2(props) {
@@ -8,7 +9,7 @@ export default function Section2(props) {
         <div className="hero pricing-section2">
             <div className="grid-wrapper">
                 <div className="img-container col-6 col-sm-12">
-                    <img src="https://placehold.it/360" alt="alt"/>
+                    <Img style={{width: '80%'}} fluid={image.childImageSharp.fluid} alt=""/>
                 </div>
                 <div className="content-container col-6 col-sm-12 ">
                     <div className="content">

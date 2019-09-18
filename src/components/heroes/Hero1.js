@@ -2,6 +2,7 @@ import React from 'react'
 import Button from '../button/Button'
 import Fade from 'react-reveal/Fade'
 import './hero-styles.scss'
+import Img from 'gatsby-image'
 
 
 export default function Hero1(props) {

@@ -62,6 +62,10 @@ nav.mobile-nav {
 		height: 3.725rem;
 		z-index: 10;
 		position: relative;
+		a {
+			height: 17px;
+			max-height: auto !important;
+		}
 	}
 	.hidden {
 		position: absolute;
