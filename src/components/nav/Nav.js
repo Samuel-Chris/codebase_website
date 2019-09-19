@@ -53,7 +53,7 @@ class Nav extends React.Component {
                 <div className="inner nav">
                     <Link to="/"><img className="image logo" src={codebaseLogo} alt="Codebase logo"/></Link>
                     <ul>
-                        <li><a href="#">Why Choose Us</a></li>
+                        <li><Link to="/">Why Choose Us</Link></li>
                         <li><Link to="/pricing">Pricing</Link></li>
                         <li><Link to="/process">Process</Link></li>
                         <li><Link to="/blog">Blog</Link></li>

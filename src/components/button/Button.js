@@ -23,7 +23,7 @@ export default function Button(props) {
         align-items: center;
         justify-content: center;
         transition: 200ms ease-in-out;
-        ${props.white && `box-shadow: none; border: 2px solid #ffffff`}
+        ${props.white && `box-shadow: none; border: 2px solid #ffffff;`}
         @media screen and (max-width: 360px){
             font-size: 0.85rem;
             height: 3rem;
@@ -32,8 +32,13 @@ export default function Button(props) {
             box-shadow: none;
         }
         &:active{
+            ${props.white && `background-color: #FFFFFF;`}
             border: ${props.color ? `2px solid #FFFFFF` : `2px solid #693FAD`};
-            color: ${props.color ? `#FFFFFF`: '#693FAD'}
+            color: ${props.color ? `#FFFFFF`: '#693FAD'};
+            outline: none;
+        }
+        &:focus {
+            outline: none;
         }
     `
 

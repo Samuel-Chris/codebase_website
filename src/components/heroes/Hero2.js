@@ -3,6 +3,7 @@ import ScrollAnimation from 'react-animate-on-scroll'
 import "animate.css/animate.min.css"
 import Button from '../button/Button'
 import './hero-styles.scss'
+import {Link} from 'gatsby'
 
 export default function Hero2({content}) {
     const {heading, blurbs} = content;
@@ -33,7 +34,7 @@ export default function Hero2({content}) {
                 })}
 
                 <div className="col-12">
-                    <Button>See Our Prices</Button>
+                    <Link to="/pricing"><Button>See Our Prices</Button></Link>
                 </div>
             </div>
         </div>

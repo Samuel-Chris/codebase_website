@@ -17,7 +17,10 @@
 		display: flex;
 		flex-direction: row;
         justify-content: space-between;
-        min-height: 35px;
+		min-height: 35px;
+		img {
+			max-width: 35px;
+		}
     }
     ul.about {
         padding: 0;

@@ -2,7 +2,7 @@ import React from 'react'
 import Button from '../button/Button'
 import Fade from 'react-reveal/Fade'
 import './hero-styles.scss'
-import Img from 'gatsby-image'
+import {Link} from 'gatsby'
 
 
 export default function Hero1(props) {
@@ -14,7 +14,7 @@ export default function Hero1(props) {
                     <Fade left>
                         <h1 className="lead">{heading}</h1>
                         <p>{description}</p>
-                        <Button>How we can help</Button>
+                       <Link to='/process'><Button>How we can help</Button></Link>
                     </Fade>
                 </div>
 
