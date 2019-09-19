@@ -27,7 +27,7 @@ class Footer extends React.Component {
                         <p>Follow Us</p>
                         <ul className="follow">
                             <li><a href="https://www.youtube.com/channel/UCxo3YOwdU_ygBBv74gDjmxA" target="_blank" className="icon"><img src={YTLogo} alt="Youtube"/></a></li>
-                            <li><a href="https://linkedin.com/company/codebase-studio/about" target="_blank" className="icon"><object data={LinkedinLogo} type="image/svg+xml">Linkedin</object></a></li>
+                            <li><a href="https://linkedin.com/company/codebase-studio/about" target="_blank" className="icon"><img src={LinkedinLogo} alt="Linkedin"/></a></li>
                             <li><a href="https://medium.com/@codebase.studio" target="_blank" className="icon"><img src={MediumLogo} alt="Medium"/></a></li>
                         </ul>
                     </div>
