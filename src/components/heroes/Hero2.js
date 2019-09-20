@@ -9,7 +9,7 @@ export default function Hero2({content}) {
     const {heading, blurbs} = content;
 
     return (
-        <div className="hero hero2">
+        <div className="hero hero2" id="hero2">
             <div className="grid-wrapper">
                 <div className="col-12">
                     <p className="lead">{heading.subheading}</p>

@@ -2,7 +2,7 @@ import React from 'react'
 import Button from '../button/Button'
 import Fade from 'react-reveal/Fade'
 import './hero-styles.scss'
-import {Link} from 'gatsby'
+import { Link, animateScroll as scroll } from "react-scroll"
 
 
 export default function Hero1(props) {
@@ -14,7 +14,7 @@ export default function Hero1(props) {
                     <Fade left>
                         <h1 className="lead">{heading}</h1>
                         <p>{description}</p>
-                       <Link to='/process'><Button>How we can help</Button></Link>
+                       <Link to='hero2' spy={true} smooth={true} duration={500}><Button>How we can help</Button></Link>
                     </Fade>
                 </div>
 
