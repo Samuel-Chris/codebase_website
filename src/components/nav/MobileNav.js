@@ -40,7 +40,7 @@ export default class MobileNav extends Component {
 
                     <div className={"hidden " + visible}>
                         <ul>
-                            <li><Link to="/">Why Choose Us</Link></li>
+                            <li><h3><Link to="/">Why Choose Us</Link></h3></li>
                             <li><h3><Link to="/pricing">Pricing</Link></h3></li>
                             <li><h3><Link to="/process">Process</Link></h3></li>
                         </ul>
