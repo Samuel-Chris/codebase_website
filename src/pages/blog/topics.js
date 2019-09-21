@@ -13,14 +13,11 @@ const TopicsPage = ({
   },
 }) => (
   <Layout>
-    <section className="section hero">
+    <section className="section" style={{padding: '2rem'}}>
       <Helmet title={`Topics | ${title}`} />
-      <div className="container content">
+      <div className="container content grid-wrapper">
         <div className="columns">
-          <div
-            className="column is-10 is-offset-1"
-            style={{ marginBottom: '6rem' }}
-          >
+          <div>
             <h1 className="lead">Topics</h1>
             <ul className="topiclist">
               {group.map(topic => (
