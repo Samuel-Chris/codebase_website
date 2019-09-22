@@ -8,10 +8,10 @@ const PricingPagePreview = ({ entry, getAsset }) => {
   if (data) {
     return (
       <PricingPageTemplate
-      section1={data.pricing_page_section1}
-      section2={data.pricing_page_section2}
-      section3={data.section4}
-      section4={data.section5}
+        section1={data.pricing_page_section1}
+        section2={data.pricing_page_section2}
+        section3={data.section4}
+        section4={data.section5}
       />
     )
   } else {

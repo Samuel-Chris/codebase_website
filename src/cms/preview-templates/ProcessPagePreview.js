@@ -7,7 +7,7 @@ const ProcessPagePreview = ({ entry, getAsset }) => {
 
   if (data) {
     return (
-      <PricingPageTemplate
+      <ProcessPageTemplate
         section1={data.process_section1}
         section2={data.process_section2}
         section3={data.process_section3}

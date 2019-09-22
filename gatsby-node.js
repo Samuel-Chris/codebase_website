@@ -103,14 +103,6 @@ exports.createPages = ({ actions, graphql }) => {
             },
           })
         })
-
-        // createPage({
-        //   path: topicPath,
-        //   component: path.resolve(`src/templates/topic-page.js`),
-        //   context: {
-        //     topic,
-        //   },
-        // })
       })
   })
 }

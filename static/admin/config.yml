@@ -6,6 +6,20 @@ media_folder: static/img
 public_folder: /img
 
 collections:
+  - name: "blog"
+    label: "Blog"
+    folder: "src/pages/blog"
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    fields:
+      - {label: "Template Key", name: "templateKey", widget: "hidden", default: "blog-post"}
+      - {label: "Publish Date", name: "date", widget: "datetime"}
+      - {label: "Topic", name: "topic", widget: "string"}
+      - {label: "Popular Post", name: "popularpost", widget: "boolean"}
+      - {label: "Featured Image", name: "featuredimage", widget: image}
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Description", name: "description", widget: "text"}
+      - {label: "Body", name: "body", widget: "markdown"}
   - name: "pages"
     label: "Pages"
     files:
@@ -59,11 +73,11 @@ collections:
         name: "contact"
         fields:
           - {label: "Template Key", name: "templateKey", widget: "hidden", default: "contact-page"}
-          - {label: "Section 1", name: "contact-page-section1", widget: "object", fields: [
-            {label: "Header", name: "heading", widget: "string"},
+          - {label: "Section 1", name: "contact_page_section1", widget: "object", fields: [
+            {label: "Heading", name: "heading", widget: "string"},
             {label: "Subheading", name: "subheading", widget: "text"}
             ]}
-          - {label: "Section 2", name: "contact-page-section2", widget: "object", fields: [
+          - {label: "Section 2", name: "contact_page_section2", widget: "object", fields: [
             {label: "Header", name: "heading", widget: "string"},
             {label: "Subheading", name: "subheading", widget: "text"},
             {label: "text", name: "text", widget: "text"}
@@ -80,50 +94,30 @@ collections:
           - {label: "Section 2", name: "process_section2", widget: "object", fields: [
             {label: "Heading", name: "heading", widget: "string"},
             {label: "Subheading", name: "subheading", widget: "text"},
-            {label: "Subheading", name: "subheading", widget: "text"},
-            {label: "Image", name: "image", widget: "image"}
             ]}
           - {label: "Section 3", name: "process_section3", widget: "object", fields: [
             {label: "Heading", name: "heading", widget: "string"},
-            {label: "Subheading", name: "subheading", widget: "text"},
             {label: "Subheading", name: "subheading", widget: "text"},
             {label: "Image", name: "image", widget: "image"}
             ]}
           - {label: "Section 4", name: "process_section4", widget: "object", fields: [
             {label: "Heading", name: "heading", widget: "string"},
             {label: "Subheading", name: "subheading", widget: "text"},
-            {label: "Subheading", name: "subheading", widget: "text"},
             {label: "Image", name: "image", widget: "image"}
             ]}
           - {label: "Section 5", name: "process_section5", widget: "object", fields: [
             {label: "Heading", name: "heading", widget: "string"},
-            {label: "Subheading", name: "subheading", widget: "text"},
             {label: "Subheading", name: "subheading", widget: "text"},
             {label: "Image", name: "image", widget: "image"}
             ]}
           - {label: "Section 6", name: "process_section6", widget: "object", fields: [
             {label: "Heading", name: "heading", widget: "string"},
             {label: "Subheading", name: "subheading", widget: "text"},
-            {label: "Subheading", name: "subheading", widget: "text"},
             {label: "Image", name: "image", widget: "image"}
             ]}
           - {label: "Section 7", name: "process_section7", widget: "object", fields: [
             {label: "Heading", name: "heading", widget: "string"},
             {label: "Subheading", name: "subheading", widget: "text"},
-            {label: "Subheading", name: "subheading", widget: "text"},
             {label: "Image", name: "image", widget: "image"}
             ]}
-      - name: "blog"
-        label: "Blog"
-        folder: "src/pages/blog"
-        create: true
-        slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
-        fields:
-          - {label: "Template Key", name: "templateKey", widget: "hidden", default: "blog-post"}
-          - {label: "Title", name: "title", widget: "string"}
-          - {label: "Publish Date", name: "date", widget: "datetime"}
-          - {label: "Description", name: "description", widget: "text"}
-          - {label: "Featured Post", name: "featuredpost", widget: "boolean"}
-          - {label: "Featured Image", name: "featuredimage", widget: image}
-          - {label: "Body", name: "body", widget: "markdown"}
-          - {label: "Topic", name: "topic", widget: "string"}
+    
