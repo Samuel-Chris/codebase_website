@@ -168,4 +168,11 @@ button {
     }
 }
 
-select option [disabled] { background-color: #FFFFFF; }
+select {
+    &:invalid {
+        background-color: #ffffff;
+    }
+    [disabled] {
+        background-color: #ffffff;
+    }
+}

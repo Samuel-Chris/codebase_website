@@ -68,7 +68,7 @@ export default class MobileNav extends Component {
                             <li><h3><Link to="/process">Process</Link></h3></li>
                         </ul>
                         <p className="blog"><Link to="/blog">Blog</Link></p>
-                        <Link to="/contact"><Button color="white">LET'S CHAT!</Button></Link>
+                        <Button color="white"><Link to="/contact">LET'S CHAT!</Link></Button>
                         <p className="copyright">
                             Copyright 2019
                         </p>
