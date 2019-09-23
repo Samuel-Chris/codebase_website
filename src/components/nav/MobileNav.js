@@ -43,14 +43,14 @@ export default class MobileNav extends Component {
 
 
     render() {
-        let visible = this.state.isOpen && "visible"
+        let visible = this.state.isOpen && "visible";
 
         let shadow = {
             boxShadow: this.state.isOpen ? '5px 10px 20px rgba(0, 0, 0, 0.25)' : 'none' 
         }
 
         let heightStyle = {
-            height: `${window.innerHeight}`
+            height: `${window.innerHeight}px`
         }
 
         return (
