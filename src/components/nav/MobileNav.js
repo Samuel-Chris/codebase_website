@@ -14,12 +14,31 @@ export default class MobileNav extends Component {
             isOpen: false
         }
 
+        this.handleLinkClick = this.handleLinkClick.bind(this);
     }
 
     handleClick() {
         this.setState({
             isOpen: !this.state.isOpen
         })
+    }
+
+    handleLinkClick(e) {
+        if (e.target.localName == 'a') {
+            if (e.target.attributes.href.value == window.location.pathname) {
+                this.setState({
+                    isOpen: !this.state.isOpen
+                })
+            }
+        }
+    }
+
+    componentDidMount() {
+        window.addEventListener('click', this.handleLinkClick, false);
+    }
+
+    componentWillUnmount() {
+        window.addEventListener('click', this.handleLinkClick, false);
     }
 
 
@@ -30,6 +49,10 @@ export default class MobileNav extends Component {
             boxShadow: this.state.isOpen ? '5px 10px 20px rgba(0, 0, 0, 0.25)' : 'none' 
         }
 
+        let heightStyle = {
+            height: `${window.innerHeight}`
+        }
+
         return (
             <div>
                 <nav className="mobile-nav">
@@ -38,7 +61,7 @@ export default class MobileNav extends Component {
                         <HamburgerMenu isOpen={this.state.isOpen} menuClicked={this.handleClick.bind(this)} strokeWidth={3} width={28} height={20} borderRadius={2} color="white"/>
                     </div>
 
-                    <div className={"hidden " + visible}>
+                    <div style={heightStyle} className={"hidden " + visible}>
                         <ul>
                             <li><h3><Link to="/">Why Choose Us</Link></h3></li>
                             <li><h3><Link to="/pricing">Pricing</Link></h3></li>
