@@ -164,13 +164,13 @@ button {
     }
     &:active{
         border: 2px solid #693FAD;
-        color: '#693FAD';
+        color: #693FAD;
     }
 }
 
 select {
+    background-color: #FFFFFF;
     option {
-        background-color: #ffffff;
         &:invalid {
             background-color: #ffffff;
         }
@@ -179,8 +179,9 @@ select {
         }
     }
     &:invalid {
-        background-color: #ffffff;
+        background-color: #FFFFFF;
     }
+
     [disabled] {
         background-color: #ffffff;
     }
