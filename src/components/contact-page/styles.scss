@@ -169,6 +169,15 @@ button {
 }
 
 select {
+    option {
+        background-color: #ffffff;
+        &:invalid {
+            background-color: #ffffff;
+        }
+        [disabled] {
+            background-color: #ffffff;
+        }
+    }
     &:invalid {
         background-color: #ffffff;
     }
