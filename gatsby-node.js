@@ -83,8 +83,7 @@ exports.createPages = ({ actions, graphql }) => {
     blogPages.forEach(edge => {
       topics = topics.concat(edge.node.frontmatter.topic);
     })
-    topics = _.uniq(topics)
-    console.log(topics)
+    topics = _.uniq(topics);
 
     topics.forEach(topic => {
         const topicPath = `/topics/${_.kebabCase(topic)}`;
