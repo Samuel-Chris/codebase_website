@@ -16,7 +16,6 @@ exports.createPages = ({ actions, graphql }) => {
               slug
             }
             frontmatter {
-              tags
               templateKey
             }
           }
@@ -66,18 +65,20 @@ exports.createPages = ({ actions, graphql }) => {
       })
     })
 
-    Array.from({ length: numPages }).forEach((_, i) => {
-      createPage({
-        path: i === 0 ? `/blog` : `/blog/${i + 1}`,
-        component: path.resolve("./src/templates/blog-page.js"),
-        context: {
-          limit: postsPerPage,
-          skip: i * postsPerPage,
-          numPages,
-          currentPage: i + 1,
-        },
+    if (numPages > 0) {
+      Array.from({ length: numPages }).forEach((_, i) => {
+        createPage({
+          path: i === 0 ? `/blog` : `/blog/${i + 1}`,
+          component: path.resolve("./src/templates/blog-page.js"),
+          context: {
+            limit: postsPerPage,
+            skip: i * postsPerPage,
+            numPages,
+            currentPage: i + 1,
+          },
+        })
       })
-    })
+    }
     
     let topics = [];
     blogPages.forEach(edge => {
@@ -87,21 +88,23 @@ exports.createPages = ({ actions, graphql }) => {
 
     topics.forEach(topic => {
         const topicPath = `/topics/${_.kebabCase(topic)}`;
-        Array.from({ length: numPages }).forEach((_, i) => {
-          createPage({
-            path: i === 0 ? `${topicPath}` : `${topicPath}/${i + 1}`,
-            component: path.resolve(`src/templates/topic-page.js`),
-            context: {
-              limit: postsPerPage,
-              skip: i * postsPerPage,
-              numPages,
-              currentPage: i + 1,
-              topic,
-              topicPath,
-              postsPerPage
-            },
+        if (numPages > 0) {
+          Array.from({ length: numPages }).forEach((_, i) => {
+            createPage({
+              path: i === 0 ? `${topicPath}` : `${topicPath}/${i + 1}`,
+              component: path.resolve(`src/templates/topic-page.js`),
+              context: {
+                limit: postsPerPage,
+                skip: i * postsPerPage,
+                numPages,
+                currentPage: i + 1,
+                topic,
+                topicPath,
+                postsPerPage
+              },
+            })
           })
-        })
+        }
       })
   })
 }
