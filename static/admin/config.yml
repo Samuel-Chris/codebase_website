@@ -9,7 +9,7 @@ collections:
   - name: "blog"
     label: "Blog"
     folder: "src/pages/blog"
-    filter: {field: "visible", value: true}"
+    filter: {field: "visible", value: true}
     create: true
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
     fields:
