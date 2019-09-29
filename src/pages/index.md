@@ -1,16 +1,17 @@
 ---
-templateKey: index-page
-title: We create amazing cross-platform experiences
-subtitle: >-
-  We bring your product to all major platforms for a fraction of the cost and
-  time.
-header_image: /img/codebase_logo.png
 meta_title: Home | Codebase Studio - Cross-platform mobile and web development agency
 meta_description: >-
   Cum sociis natoque penatibus et magnis dis parturient montes, nascetur
   ridiculus mus. Aenean eu leo quam. Pellentesque ornare sem lacinia quam
   venenatis vestibulum. Sed posuere consectetur est at lobortis. Cras mattis
   consectetur purus sit amet fermentum.
+templateKey: index-page
+path: /
+title: We create amazing cross-platform experiences
+subtitle: >-
+  We bring your product to all major platforms for a fraction of the cost and
+  time.
+header_image: /img/codebase_logo.png
 section1:
   description: >-
     We are a cross-platform development agency that wants to grow your idea into

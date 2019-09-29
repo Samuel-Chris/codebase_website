@@ -65,46 +65,43 @@ exports.createPages = ({ actions, graphql }) => {
       })
     })
 
-    if (numPages > 0) {
-      Array.from({ length: numPages }).forEach((_, i) => {
-        createPage({
-          path: i === 0 ? `/blog` : `/blog/${i + 1}`,
-          component: path.resolve("./src/templates/blog-page.js"),
-          context: {
-            limit: postsPerPage,
-            skip: i * postsPerPage,
-            numPages,
-            currentPage: i + 1,
-          },
-        })
+    Array.from({ length: numPages }).forEach((_, i) => {
+      createPage({
+        path: i === 0 ? `/blog` : `/blog/${i + 1}`,
+        component: path.resolve("./src/templates/blog-page.js"),
+        context: {
+          limit: postsPerPage,
+          skip: i * postsPerPage,
+          numPages,
+          currentPage: i + 1,
+        },
       })
-    }
+    })
     
     let topics = [];
     blogPages.forEach(edge => {
       topics = topics.concat(edge.node.frontmatter.topic);
     })
-    topics = _.uniq(topics);
+    topics = _.uniq(topics)
+    console.log(topics)
 
     topics.forEach(topic => {
         const topicPath = `/topics/${_.kebabCase(topic)}`;
-        if (numPages > 0) {
-          Array.from({ length: numPages }).forEach((_, i) => {
-            createPage({
-              path: i === 0 ? `${topicPath}` : `${topicPath}/${i + 1}`,
-              component: path.resolve(`src/templates/topic-page.js`),
-              context: {
-                limit: postsPerPage,
-                skip: i * postsPerPage,
-                numPages,
-                currentPage: i + 1,
-                topic,
-                topicPath,
-                postsPerPage
-              },
-            })
+        Array.from({ length: numPages }).forEach((_, i) => {
+          createPage({
+            path: i === 0 ? `${topicPath}` : `${topicPath}/${i + 1}`,
+            component: path.resolve(`src/templates/topic-page.js`),
+            context: {
+              limit: postsPerPage,
+              skip: i * postsPerPage,
+              numPages,
+              currentPage: i + 1,
+              topic,
+              topicPath,
+              postsPerPage
+            },
           })
-        }
+        })
       })
   })
 }
