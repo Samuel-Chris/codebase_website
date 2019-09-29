@@ -69,14 +69,6 @@ const IndexPage = ({ data }) => {
     )
   }
   
-  // IndexPage.propTypes = {
-  //   data: PropTypes.shape({
-  //     markdownRemark: PropTypes.shape({
-  //       frontmatter: PropTypes.object,
-  //     }),
-  //   }),
-  // }
-  
   export default IndexPage
   
 
@@ -90,15 +82,9 @@ export const pageQuery = graphql`
         path
         title
         subtitle
-        header_image {
-          childImageSharp {
-            fluid(maxWidth: 2048, quality: 100) {
-              ...GatsbyImageSharpFluid
-            }
-          }
+        image {
+          publicURL
         }
-        meta_title
-        meta_description
         section1 {
           heading
           description

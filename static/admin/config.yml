@@ -30,8 +30,6 @@ collections:
         name: "index"
         fields:
           - {label: "Template Key", name: "templateKey", widget: "hidden", default: "index-page"}
-          - {label: "Title", name: "title", widget: string}
-          - {label: "SubTitle", name: "subtitle", widget: string}
           - {label: "Image", name: "header_image", widget: image}
           - {label: "Meta_Title", name: "meta_title", widget: string}
           - {label: "Meta_Description", name: "meta_description", widget: "string"}

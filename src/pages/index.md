@@ -11,7 +11,7 @@ title: We create amazing cross-platform experiences
 subtitle: >-
   We bring your product to all major platforms for a fraction of the cost and
   time.
-header_image: /img/codebase_logo.png
+image: /img/codebase_logo.png
 section1:
   description: >-
     We are a cross-platform development agency that wants to grow your idea into
