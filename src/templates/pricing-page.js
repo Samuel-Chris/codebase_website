@@ -30,7 +30,7 @@ export class PricingPageTemplate extends Component {
     
 
     render() {
-      const {section1, section2, section3, section4, meta_title, meta_description, path} = this.props;
+      const {section1, section3, section4, meta_title, meta_description, path} = this.props;
 
         return (
             <Layout>
@@ -50,7 +50,6 @@ const PricingPage = ({ data }) => {
     return  (
         <PricingPageTemplate 
             section1={currentPage.frontmatter.pricing_page_section1}
-            section2={currentPage.frontmatter.pricing_page_section2}
             meta_title={currentPage.frontmatter.meta_title}
             meta_description={currentPage.frontmatter.meta_description}
             path={currentPage.frontmatter.path}
@@ -93,18 +92,6 @@ export const pageQuery = graphql`
       pricing_page_section1 {
         heading
         subheading
-      }
-      pricing_page_section2 {
-        heading
-        subheading
-        text
-        image {
-          childImageSharp {
-            fluid(maxWidth: 400) {
-              ...GatsbyImageSharpFluid
-            }
-          }
-        }
       }
      }
     }
