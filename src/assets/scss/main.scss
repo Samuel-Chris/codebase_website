@@ -1488,6 +1488,7 @@ h1.lead, h3.lead {
 		padding: 2rem 1rem !important;
 	}
 }
+
 @include breakpoint(340px) {
 	button {
 		max-width: 12rem;

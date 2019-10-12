@@ -2,7 +2,9 @@ import React, { Component } from "react"
 import Layout from '../components/layout/Layout'
 import { Link, graphql } from 'gatsby'
 import Section1 from '../components/pricing-page/Section1'
+import Section1B from '../components/pricing-page/Section1B'
 import Section2 from '../components/pricing-page/Section2'
+import Section3 from '../components/pricing-page/Section3'
 import Hero4 from '../components/heroes/Hero4'
 import Hero4Mobile from '../components/heroes/Hero4Mobile'
 import Hero5 from '../components/heroes/Hero5'
@@ -33,10 +35,9 @@ export class PricingPageTemplate extends Component {
         return (
             <Layout>
                 <SEO title={meta_title} description={meta_description} pathname={path} />
-                <Section1 content={section1} />
-                <Section2 content={section2} />
-                {this.state.isMobile ? <Hero4Mobile content={section3}/> : <Hero4 content={section3}/>}
+                <Section1B content={section1} isMobile={this.state.isMobile}/>
                 <Hero5 content={section4}/>
+                <Section3 />
             </Layout>
         );
     }
